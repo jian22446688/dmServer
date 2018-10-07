@@ -1,0 +1,319 @@
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+}
+header {
+  background-image: url("header.png");
+  background-size: 100% 100%;
+  height: 4.55rem;
+}
+.centerMsg {
+  width: auto;
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+.form {
+  background: url("form-bg.png") no-repeat;
+  padding: 0.4rem 0.12rem 0.6rem;
+}
+.form .hdtops {
+  width: 3.5rem;
+}
+.form ul li {
+  width: 1.96rem;
+  text-align: center;
+}
+.form ul li img {
+  width: 0.94rem;
+  height: 0.94rem;
+  margin-bottom: 0.1rem;
+}
+.form ul li p {
+  font-size: 0.2rem;
+  color: #fff;
+  text-align: center;
+}
+.form > p {
+  text-align: center;
+  color: #e61717;
+}
+.form > p:nth-of-type(1) {
+  font-size: 0.36rem;
+  font-weight: bold;
+}
+.form > p:nth-of-type(2) {
+  font-size: 0.36rem;
+  font-weight: bold;
+}
+.form div {
+  border: 1px solid #d2d2d2;
+  height: 0.8rem;
+  width: 5.3rem;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.form div:nth-of-type(1) {
+  margin-top: 0.21rem;
+  margin-bottom: 0.14rem;
+}
+.form div:nth-of-type(1) span {
+  background-image: url("form-icon-4.png");
+}
+.form div:nth-of-type(2) {
+  margin-bottom: 0.19rem;
+}
+.form div:nth-of-type(2) span {
+  background-image: url("form-icon-5.png");
+}
+.form div span {
+  width: 0.85rem;
+  height: 0.8rem;
+  float: left;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.form div input {
+  border: none;
+  width: 4.4rem;
+  float: left;
+  text-indent: 1em;
+  height: 0.8rem;
+  border: 0;
+  outline: none;
+}
+.form button {
+  background: -moz-linear-gradient(top, #ff5453 0%, #ff0805 100%);
+  background: -webkit-linear-gradient(top, #ff5453 0%, #ff0805 100%);
+  background: -o-linear-gradient(top, #ff5453 0%, #ff0805 100%);
+  background: -ms-linear-gradient(top, #ff5453 0%, #ff0805 100%);
+  background: linear-gradient(to bottom, #ff5453 0%, #ff0805 100%);
+  width: 5rem;
+  margin: 0 auto;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.3rem;
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.form .p-Font {
+  padding-top: 0.20rem;
+  font-size: 12px!important;
+  color: #e61717;
+}
+.fuwu {
+  padding: 0.4rem 0.21rem 0.2rem;
+  text-align: center;
+  background-color: #251a15;
+}
+.fuwu > p {
+  font-size: 0.36rem;
+  color: #ffea00;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+.fuwu > p.fuwuFont {
+  font-size: 0.20rem;
+  color: #f4f4f5;
+}
+._fuwuImage {
+  background-color: #050403;
+}
+._fuwuImage img {
+  height: 100%;
+  width: 100%;
+}
+.youshi {
+  padding: 0.4rem 0.3rem;
+  background-color: #ee2828;
+}
+.youshi > p {
+  font-size: 0.36rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+.youshi ul li {
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  background: #ffffff;
+  margin-bottom: 0.2rem;
+}
+.youshi ul li img {
+  height: 1rem;
+  margin-right: 0.2rem;
+}
+.youshi ul li div p:nth-of-type(1) {
+  font-size: 0.3rem;
+  font-weight: bold;
+  color: #323232;
+}
+.youshi ul li div p:nth-of-type(2) {
+  color: #626262;
+  font-size: 0.24rem;
+}
+.anlizs {
+  padding: 0.4rem 0.3rem;
+  background-color: #ffea00;
+}
+.anlizs > p {
+  font-size: 0.36rem;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+.anlizs ul {
+  padding: 0.1rem;
+}
+.anlizs ul li {
+  margin-bottom: 0.1rem;
+}
+.anlizs ul li img {
+  width: 100%;
+}
+.footer {
+  background-image: url("footer-icon-1.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  height: 2.72rem;
+}
+.lay {
+  width: 5.2rem;
+  margin: 0 auto;
+  padding: 0.47rem 0.3rem 0.65rem;
+  border-bottom: 2px solid #d52223;
+}
+.lay p {
+  text-align: center;
+}
+.lay p:nth-of-type(1) {
+  font-size: 0.36rem;
+  font-weight: bold;
+  color: #db2f0d;
+}
+.lay p:nth-of-type(2) {
+  font-size: 0.24rem;
+  color: #323232;
+  margin-bottom: 0.31rem;
+}
+.lay input {
+  width: 5.24rem;
+  border: 1px solid #c9c9c9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-indent: 1em;
+  margin-bottom: 0.22rem;
+  height: 0.8rem;
+}
+.lay button {
+  background: -moz-linear-gradient(top, #ff5453 0%, #ff0805 100%);
+  background: -webkit-linear-gradient(top, #ff5453 0%, #ff0805 100%);
+  background: -o-linear-gradient(top, #ff5453 0%, #ff0805 100%);
+  background: -ms-linear-gradient(top, #ff5453 0%, #ff0805 100%);
+  background: linear-gradient(to bottom, #ff5453 0%, #ff0805 100%);
+  width: 3.9rem;
+  margin: 0 auto;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.3rem;
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.footer-float {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 0.7rem;
+  padding: 0.25rem 0;
+  z-index: 999;
+}
+.footer-float ul,
+.footer-float li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-float > ul > li {
+  position: relative;
+  float: left;
+  width: 46%;
+  height: 0.75rem;
+  margin-left: 2.5%;
+}
+.footer-float > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 0.75rem;
+  line-height: 0.75rem;
+  background: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: bold;
+  overflow: hidden;
+}
+.footer-float > ul > li > a span {
+  display: inline-block;
+}
+.footer-float > ul > li > a.th {
+  background: #ff5354 url("icon-dh.png") no-repeat 0.6rem center;
+  background-size: 21px;
+  text-indent: 1.1rem;
+}
+.footer-float > ul > li > a.zx {
+  background: #7fbcf3 url("icon-xx.png.html") no-repeat 20px center;
+  background-size: 17px;
+  text-indent: 45px;
+}
+.footer-float > ul > li > a.sq {
+  background: #f8b615 url("icon-sq.png") no-repeat 0.6rem center;
+  background-size: 28px;
+  text-indent: 1.1rem;
+}
+.footer-float .foot-dialog {
+  display: none;
+  position: absolute;
+  bottom: 0.76rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  border-radius: 3px;
+  z-index: 10;
+}
+.footer-float .foot-dialog p {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  height: 0.75rem;
+  line-height: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+.footer-float .foot-dialog p:last-child {
+  border: none;
+}
+.footer-float .foot-dialog p:after {
+  content: '';
+}
+.footer-float .foot-dialog a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  cursor: pointer;
+}

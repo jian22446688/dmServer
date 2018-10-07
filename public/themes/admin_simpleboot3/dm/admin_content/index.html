@@ -1,0 +1,140 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="javascript:;">内容列表</a></li>
+        <li><a href="{:url('AdminContent/add')}">添加内容</a></li>
+    </ul>
+    <div style="height: 32px"></div>
+
+    <table class="table table-hover table-bordered table-list" >
+        <thead >
+        <tr>
+            <th width="50">ID</th>
+            <th>标题</th>
+            <th width="180">分类</th>
+            <th style="text-align: center" width="70">状态</th>
+            <th style="text-align: center" width="80">类型</th>
+            <th style="text-align: center" width="80">缩略图</th>
+            <th width="160">更新日期</th>
+            <th width="160">发布日期</th>
+
+            <th width="90">操作</th>
+        </tr>
+        </thead>
+
+        <foreach name="datalist" item="vo">
+            <tr>
+                <td><b>{$vo.id}</b></td>
+                <td>
+                    {$vo.title}
+                </td>
+
+                <td>{$vo['categorname']->name}</td>
+                <td style="text-align: center">
+                    <if condition="($vo['status'] == 1)">
+                        <span style="padding: 2px; background-color: #18BC9C; color: #fff;">已发布</span>
+                        <else />
+                        <span style="padding: 2px; background-color: #a2a2a2; color: #fff;">未发布</span>
+                    </if>
+                </td>
+
+                <td style="text-align: center">
+                    <if condition="($vo['type'] == 1)">
+                        <span>图片</span>
+                        <elseif condition="($vo['type'] == 2)"/>
+                        <span>视频</span>
+                        <else />
+                        <span>未知类型</span>
+                    </if>
+                </td>
+                <td style="text-align: center">
+                    <a href="javascript:parent.imagePreviewDialog('{:cmf_get_image_preview_url($vo.file)}');">
+                        <i class="fa fa-photo fa-fw"></i>
+                    </a>
+                </td>
+                <td>
+                    {$vo->update_time}
+                </td>
+                <td>
+                    {$vo->create_time}
+                </td>
+                <td>
+                    <a href="{:url('AdminContent/edit',array('id'=>$vo['id']))}">{:lang('EDIT')}</a>
+                    <a href="{:url('AdminContent/delete',array('id'=>$vo['id']))}" class="js-ajax-delete">{:lang('DELETE')}</a>
+                </td>
+            </tr>
+        </foreach>
+    </table>
+    <ul style="float: right" class="pagination">{$page|default=''}</ul>
+
+
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+<script>
+
+    function reloadPage(win) {
+        win.location.reload();
+    }
+
+    $(function () {
+        setCookie("refersh_time", 0);
+        Wind.use('ajaxForm', 'artDialog', 'iframeTools', function () {
+            //批量复制
+            $('.js-articles-copy').click(function (e) {
+                var ids = [];
+                $("input[name='ids[]']").each(function () {
+                    if ($(this).is(':checked')) {
+                        ids.push($(this).val());
+                    }
+                });
+
+                if (ids.length == 0) {
+                    art.dialog.through({
+                        id: 'error',
+                        icon: 'error',
+                        content: '您没有勾选信息，无法进行操作！',
+                        cancelVal: '关闭',
+                        cancel: true
+                    });
+                    return false;
+                }
+
+                ids = ids.join(',');
+                art.dialog.open("__ROOT__/index.php?g=portal&m=AdminArticle&a=copy&ids=" + ids, {
+                    title: "批量复制",
+                    width: "300px"
+                });
+            });
+            //批量移动
+            $('.js-articles-move').click(function (e) {
+                var ids = [];
+                $("input[name='ids[]']").each(function () {
+                    if ($(this).is(':checked')) {
+                        ids.push($(this).val());
+                    }
+                });
+
+                if (ids.length == 0) {
+                    art.dialog.through({
+                        id: 'error',
+                        icon: 'error',
+                        content: '您没有勾选信息，无法进行操作！',
+                        cancelVal: '关闭',
+                        cancel: true
+                    });
+                    return false;
+                }
+
+                ids = ids.join(',');
+                art.dialog.open("__ROOT__/index.php?g=portal&m=AdminArticle&a=move&old_term_id={$term.term_id|default=0}&ids=" + ids, {
+                    title: "批量移动",
+                    width: "300px"
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>

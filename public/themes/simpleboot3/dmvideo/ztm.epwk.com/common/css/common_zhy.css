@@ -1,0 +1,47 @@
+/*
+    author:张皓宇
+    2018/01/25
+*/
+html,body{
+    margin: 0;
+    padding: 0;
+}
+p,ul,li,h5{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+*{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box ;
+}
+.box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.block{
+    display: block;
+}
+.flex{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+}
+.flex-sp-b{
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.flex-sp-a{
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+.flex-sp-c{
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.flex-cz-c{
+    -webkit-align-items:center;
+    align-items:center;
+}

@@ -1,0 +1,65 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:url('AdminCategory/index')}">分类管理</a></li>
+        <li><a href="{:url('AdminCategory/add')}">添加分类</a></li>
+        <li class="active"><a href="javascript:;">编辑分类</a></li>
+    </ul>
+    <div class="row margin-top-20">
+        <div class="col-md-offset-1 col-md-8">
+            <form class="js-ajax-form" action="{:url('AdminCategory/editPost')}" method="post">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="A">
+                        <!--<div class="form-group">-->
+                        <!--<label for="input-parent"><span class="form-required">*</span>上级</label>-->
+                        <!--<div>-->
+                        <!--<select class="form-control" name="parent_id" id="input-parent">-->
+                        <!--<option value="0">作为一级分类</option>-->
+                        <!--</select>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <div class="form-group">
+                            <label for="input-name"><span class="form-required">*</span>分类名称</label>
+                            <div>
+                                <input type="hidden" name="post[id]" value="{$category.id}">
+                                <input type="hidden" name="post[parent_id]" value="{$category.parent_id}">
+                                <input type="text" class="form-control" id="input-name" name="post[name]" value="{$category.name|default=''}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-name">状态</label>
+                            <div>
+                                <if condition="($category.status)">
+                                    <input type="radio" name="post[status]" value="1" checked ="checked">启用
+                                    <input type="radio" name="post[status]" value="0">禁用
+                                    <else />
+                                    <input type="radio" name="post[status]" value="1">启用
+                                    <input type="radio" name="post[status]" value="0" checked ="checked">禁用
+                                </if>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-description">描述</label>
+                            <div>
+                                <textarea class="form-control" name="post[description]" id="input-description">{$category.description|default=''}</textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary js-ajax-submit">{:lang('SAVE')}</button>
+                    <a class="btn btn-default" href="{:url('AdminCategory/index')}">{:lang('BACK')}</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="__STATIC__/js/admin.js"></script>
+</body>
+</html>
