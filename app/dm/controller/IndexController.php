@@ -14,8 +14,16 @@ use cmf\controller\HomeBaseController;
 
 class IndexController extends HomeBaseController
 {
-    public function index()
-    {
+    public function index(){
+
+
+        if (cmf_is_mobile()){
+            // 手机访问
+
+        }else{
+            // pc 访问
+
+        }
         return $this->fetch(':index');
     }
 }

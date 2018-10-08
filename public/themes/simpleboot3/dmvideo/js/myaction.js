@@ -65,7 +65,7 @@ $(document).ready(function() {
             shade: .8,
             shadeClose: false,
             area: ['500px', '400px'],
-            content: ['./layer-submit/index.html', 'no']
+            content: ['__TMPL__/dmvideo/layer-submit/index.html', 'no']
         })
     }
 
