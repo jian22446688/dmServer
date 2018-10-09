@@ -24,6 +24,7 @@ class IndexController extends HomeBaseController
             // pc 访问
 
         }
+
         return $this->fetch(':index');
     }
 }
