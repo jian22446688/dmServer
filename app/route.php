@@ -9,10 +9,14 @@
 // | Author: Dean <zxxjjforever@163.com>
 // +----------------------------------------------------------------------
 
+use think\Route;
+
 if (file_exists(CMF_ROOT . "data/conf/route.php")) {
     $runtimeRoutes = include CMF_ROOT . "data/conf/route.php";
 } else {
     $runtimeRoutes = [];
 }
+
+Route::get('test', 'dm/Index/test');
 
 return $runtimeRoutes;

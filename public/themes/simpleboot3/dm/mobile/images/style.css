@@ -129,7 +129,7 @@ header {
   background-color: #050403;
 }
 ._fuwuImage img {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 .youshi {

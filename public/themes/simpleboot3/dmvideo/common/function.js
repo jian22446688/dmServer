@@ -36,10 +36,12 @@ define(function (require, exports, module) {
             var r = eval("regexEnum." + reg);
             var result = (new RegExp(r)).test(strings);
             return result;
-        },//只允许输入数字
+        },
+        //只允许输入数字
         clearstr2: function (inputobj) {
             inputobj.value = inputobj.value.replace(/[^0123456789]/g, '');
-        },//判断是否PC或移动端true:PC false Mobile
+        },
+        //判断是否PC或移动端true:PC false Mobile
         browserRedirect: function () {
             var sUserAgent = navigator.userAgent.toLowerCase();
             var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";

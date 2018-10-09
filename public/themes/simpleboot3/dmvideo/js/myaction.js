@@ -1,8 +1,6 @@
 $(document).ready(function() {
     console.log('sssss')
 
-
-    
     // $('[placeholder]').placeholder();
 
     if ($('.layer-item').length > 0) {
@@ -65,7 +63,7 @@ $(document).ready(function() {
             shade: .8,
             shadeClose: false,
             area: ['500px', '400px'],
-            content: ['__TMPL__/dmvideo/layer-submit/index.html', 'no']
+            content: ["{url('Index/layerSubmit')}", 'no']
         })
     }
 

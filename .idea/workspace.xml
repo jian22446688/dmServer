@@ -3,8 +3,62 @@
   <component name="ChangeListManager">
     <list default="true" id="503849de-a487-4584-b2bd-6283766e82c7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dm/controller/AdminContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dm/controller/AdminContentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dm/controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dm/controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/function.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/layer-2.x/skin/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/js/myaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/js/myaction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/001.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/001.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/001.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/001.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/002.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/002.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/003-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/003-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/003.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/003.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/004-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/004-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/005-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/005-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/005.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/005.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/btn1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/btn1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/icon-qq.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/icon-qq.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/icon-tel.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/icon-tel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/index_01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/index_01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/index_07.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/index_07.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/index_09.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/index_09.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/index_35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/index_35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/nav_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/nav_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/nav_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/nav_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/nav_06.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/nav_06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/images/tab-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/images/tab-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/js/action.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/js/action.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/_footer-icon-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/_list-icon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/_list-icon2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/_list-icon3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/_list-icon4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/footer-icon-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/form-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/form-icon-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/form-icon-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/icon-dh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/icon-sq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/icon-xx.png.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/youshi-icon-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/youshi-icon-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/youshi-icon-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/images/youshi-icon-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/1804yingshi/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/_downloads.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/common/css/common_zhy.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/common/js/flexible.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/common/js/swiper.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/common/layer2/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/common/layer2/need/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/common/lib/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/common/sea.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/common/sea.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,36 +74,44 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="css" value="3" />
           <entry key="gitattributes" value="1" />
-          <entry key="html" value="5" />
-          <entry key="js" value="1" />
-          <entry key="php" value="5" />
+          <entry key="html" value="14" />
+          <entry key="js" value="28" />
+          <entry key="php" value="16" />
+          <entry key="ts" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="5" />
-          <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="5" />
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="14" />
+          <entry key="JavaScript" value="28" />
+          <entry key="PHP" value="16" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="45" />
-          <entry key="php" value="88" />
+          <entry key="css" value="3" />
+          <entry key="html" value="185" />
+          <entry key="js" value="284" />
+          <entry key="php" value="521" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="45" />
-          <entry key="PHP" value="88" />
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="185" />
+          <entry key="JavaScript" value="284" />
+          <entry key="PHP" value="521" />
         </counts>
       </usages-collector>
     </session>
@@ -57,48 +119,65 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/index.html">
+        <entry file="file://$PROJECT_DIR$/app/dm/controller/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="366" column="6" selection-start-line="366" selection-start-column="6" selection-end-line="366" selection-end-column="6" />
+            <state relative-caret-position="465">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/route.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding>
-                <element signature="n#style#0;n#span#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#6#80#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/dm/controller/IndexController.php">
+        <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/images/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="375">
+              <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/dm/admin_content/index.html">
+        <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="37" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/dm/controller/AdminContentController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+            <state relative-caret-position="555">
+              <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -108,6 +187,12 @@
       <find>toj</find>
       <find>tojson</find>
       <find>$autoWriteTimestamp</find>
+      <find>fn</find>
+      <find>unrecognized</find>
+      <find>linkTemplate</find>
+      <find>_footer-icon-1</find>
+      <find>_fuwuImage</find>
+      <find>8181</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,12 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/dm/controller/AdminArticleController.php" />
-        <option value="$PROJECT_DIR$/app/dm/controller/AdminTagController.php" />
-        <option value="$PROJECT_DIR$/app/dm/controller/ArticleController.php" />
-        <option value="$PROJECT_DIR$/app/dm/controller/ListController.php" />
-        <option value="$PROJECT_DIR$/app/dm/controller/PageController.php" />
-        <option value="$PROJECT_DIR$/app/dm/controller/SearchController.php" />
         <option value="$PROJECT_DIR$/app/dm/controller/TagController.php" />
         <option value="$PROJECT_DIR$/app/dm/controller/AdminPageController.php" />
         <option value="$PROJECT_DIR$/app/config.php" />
@@ -156,10 +235,23 @@
         <option value="$PROJECT_DIR$/app/dm/controller/AdminUserInfoController.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/index.html" />
-        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/js/myaction.js" />
         <option value="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/index.html" />
-        <option value="$PROJECT_DIR$/app/dm/controller/IndexController.php" />
         <option value="$PROJECT_DIR$/app/dm/controller/AdminContentController.php" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/test/test.html" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/js/myaction.js" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/function.js" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/d-function.js" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/js/layer-action.js" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/index.html" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/layer-2.x/layer.js" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/images/style.css" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/index.js" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/js/index.js" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/common/statisticsCommon.js" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/images/index.js" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/index.html" />
+        <option value="$PROJECT_DIR$/app/dm/controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/route.php" />
       </list>
     </option>
   </component>
@@ -198,9 +290,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="340" />
-    <option name="y" value="10" />
     <option name="width" value="1590" />
-    <option name="height" value="1100" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -208,7 +299,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,19 +314,6 @@
             <path>
               <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="dmServer" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dmServer" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dm" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dmServer" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -250,14 +327,14 @@
               <item name="dmServer" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_simpleboot3" type="462c0819:PsiDirectoryNode" />
+              <item name="simpleboot3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="dmServer" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_simpleboot3" type="462c0819:PsiDirectoryNode" />
+              <item name="simpleboot3" type="462c0819:PsiDirectoryNode" />
               <item name="dm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -265,17 +342,27 @@
               <item name="dmServer" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_simpleboot3" type="462c0819:PsiDirectoryNode" />
+              <item name="simpleboot3" type="462c0819:PsiDirectoryNode" />
               <item name="dm" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_content" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmServer" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="simpleboot3" type="462c0819:PsiDirectoryNode" />
+              <item name="dmvideo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -284,15 +371,17 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/themes/simpleboot3/dm" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/themes/simpleboot3" />
-      <recent name="$PROJECT_DIR$/public/themes/admin_simpleboot3/dm/admin_user_info" />
-      <recent name="$PROJECT_DIR$/public/themes/admin_simpleboot3/dm" />
-      <recent name="$PROJECT_DIR$/app/dm/controller" />
-      <recent name="$PROJECT_DIR$/public/themes/admin_simpleboot3" />
+      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dmvideo\common\layer-2.x\skin\default" />
+      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dmvideo\common" />
+      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dm\mobile\common" />
+      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dm\mobile" />
+      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dmvideo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dm\mobile\js" />
+      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dm" />
+      <recent name="$PROJECT_DIR$/public/themes/simpleboot3/dm" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -320,21 +409,23 @@
       <workItem from="1538801252746" duration="42337000" />
       <workItem from="1538973547639" duration="917000" />
       <workItem from="1538976310926" duration="388000" />
+      <workItem from="1539066587202" duration="10846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43642000" />
+    <option name="totallyTimeSpent" value="54488000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="340" y="10" width="1590" height="1100" extended-state="0" />
+    <frame x="340" y="0" width="1590" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18039216" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19869281" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -358,168 +449,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/portal/api/CategoryApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/url.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/nav.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/hooks.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/model/PortalPostModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/db/Query.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="2028" column="20" selection-start-line="2028" selection-start-column="20" selection-end-line="2028" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/command.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/route.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/install/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simplewind/cmf/controller/AdminBaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="58" column="16" lean-forward="true" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/portal/admin_article/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1013">
-          <caret line="172" column="29" lean-forward="true" selection-start-line="164" selection-start-column="23" selection-end-line="172" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/public/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="85" column="33" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="33" />
-          <folding>
-            <element signature="e#613#640#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/portal/admin_article/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2265">
-          <caret line="151" column="61" selection-start-line="147" selection-start-column="28" selection-end-line="151" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/portal/controller/AdminArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="142" column="39" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/portal/model/PortalPostModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="69" column="5" selection-start-line="51" selection-start-column="4" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/controller/AdminPageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/controller/AdminIndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/portal/controller/AdminCategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="317" column="5" lean-forward="true" selection-start-line="317" selection-start-column="5" selection-end-line="317" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/dm/admin_content/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="102" column="11" selection-start-line="14" selection-start-column="4" selection-end-line="102" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/dm/admin_category/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="55" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/portal/admin_category/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/portal/admin_article/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="192" column="29" lean-forward="true" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/dm/admin_category/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/dm/admin_category/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
@@ -625,43 +554,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/js/myaction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-930">
-          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/dm/controller/AdminUserInfoController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding>
-            <element signature="e#625#654#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="366" column="6" selection-start-line="366" selection-start-column="6" selection-end-line="366" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,10 +578,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/controller/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/app/dm/controller/AdminContentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="555">
+          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/ztm.epwk.com/_downloads.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simplewind/cmf/controller/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/test/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/layer-submit/js/action.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -693,10 +623,185 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/controller/AdminContentController.php">
+    <entry file="file://$PROJECT_DIR$/simplewind/cmf/controller/HomeBaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        <state relative-caret-position="150">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="393" column="44" lean-forward="true" selection-start-line="393" selection-start-column="44" selection-end-line="393" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/d-function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/layer-2.x/skin/default/layer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="76" lean-forward="true" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/layer-2.x/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="89" column="4" lean-forward="true" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/js/action.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="70" selection-start-column="70" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/conf/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/common/sea.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/statisticsCommon.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/until.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/js/layer-action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="136" column="9" lean-forward="true" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/js/myaction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/images/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="142" column="20" lean-forward="true" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16925" column="12" selection-start-line="16925" selection-start-column="12" selection-end-line="16925" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/common/sea.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/common/js/flexible.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/common/statisticsCommon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/images/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dm/controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="e#6#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/layer-submit/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
