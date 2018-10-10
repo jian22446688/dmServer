@@ -1,8 +1,6 @@
 $(document).ready(function() {
     console.log('sssss')
 
-    // $('[placeholder]').placeholder();
-
     if ($('.layer-item').length > 0) {
         var lindex = parent.layer.getFrameIndex(window.name);
     }
@@ -44,14 +42,13 @@ $(document).ready(function() {
     })
 
     $(document).on('click', '.layer-close', function() {
-        console.log('ddddd');
         parent.layer.close(lindex);
     })
 
     $(document).on('click', '.layer-btn', function() {
-        console.log('ooooo');
         layer_open();
     })
+
 
     function layer_open() {
         layer.open({
@@ -63,7 +60,7 @@ $(document).ready(function() {
             shade: .8,
             shadeClose: false,
             area: ['500px', '400px'],
-            content: ["{url('Index/layerSubmit')}", 'no']
+            content: ["/layersubimt", 'no']
         })
     }
 
