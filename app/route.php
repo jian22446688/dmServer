@@ -19,4 +19,7 @@ if (file_exists(CMF_ROOT . "data/conf/route.php")) {
 
 Route::get('test', 'dm/Index/test');
 Route::get('layersubimt', '/dm/Index/layerSubmit');
+
+//Route::post('userinfo', '/dm/Index/userSubmit');
+
 return $runtimeRoutes;

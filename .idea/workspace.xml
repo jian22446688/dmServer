@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="503849de-a487-4584-b2bd-6283766e82c7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dm/controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dm/controller/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/route.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dm/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/images/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/images/css.css" afterDir="false" />
@@ -22,65 +23,73 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="4" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="3" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="5" />
+          <entry key="css" value="9" />
           <entry key="gitattributes" value="1" />
-          <entry key="html" value="24" />
-          <entry key="js" value="29" />
-          <entry key="php" value="18" />
+          <entry key="html" value="28" />
+          <entry key="jpg" value="2" />
+          <entry key="js" value="31" />
+          <entry key="json" value="1" />
+          <entry key="php" value="27" />
+          <entry key="png" value="1" />
           <entry key="ts" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="5" />
-          <entry key="HTML" value="24" />
-          <entry key="JavaScript" value="29" />
-          <entry key="PHP" value="18" />
+          <entry key="CSS" value="9" />
+          <entry key="HTML" value="28" />
+          <entry key="Image" value="3" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="31" />
+          <entry key="PHP" value="27" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="56" />
-          <entry key="html" value="266" />
-          <entry key="js" value="302" />
-          <entry key="php" value="534" />
+          <entry key="css" value="312" />
+          <entry key="html" value="604" />
+          <entry key="js" value="691" />
+          <entry key="php" value="1474" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="56" />
-          <entry key="HTML" value="266" />
-          <entry key="JavaScript" value="302" />
-          <entry key="PHP" value="534" />
+          <entry key="CSS" value="312" />
+          <entry key="HTML" value="604" />
+          <entry key="JavaScript" value="691" />
+          <entry key="PHP" value="1474" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/dm/controller/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="725">
+              <caret line="69" column="26" lean-forward="true" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+              <folding>
+                <element signature="e#624#653#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/route.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#6#80#0#PHP" expanded="true" />
               </folding>
@@ -91,8 +100,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/js/myaction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+            <state relative-caret-position="590">
+              <caret line="197" column="38" lean-forward="true" selection-start-line="197" selection-start-column="38" selection-end-line="197" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -100,13 +118,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="389" selection-start-line="389" selection-end-line="389" />
+            <state relative-caret-position="259">
+              <caret line="314" column="27" selection-start-line="314" selection-start-column="27" selection-end-line="314" selection-end-column="27" />
               <folding>
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#span#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,6 +157,9 @@
       <find>_footer-icon-1</find>
       <find>_fuwuImage</find>
       <find>8181</find>
+      <find>goto-top</find>
+      <find>page4</find>
+      <find>route</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,7 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/dm/controller/AdminPageController.php" />
         <option value="$PROJECT_DIR$/app/config.php" />
         <option value="$USER_HOME$/Desktop/dmvideo/README.md" />
         <option value="$PROJECT_DIR$/public/static/js/admin.js" />
@@ -190,11 +213,12 @@
         <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/common/statisticsCommon.js" />
         <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/images/index.js" />
         <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/mobile/index.html" />
-        <option value="$PROJECT_DIR$/app/dm/controller/IndexController.php" />
         <option value="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/images/css.css" />
         <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/index.html" />
-        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/js/myaction.js" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dm/test.html" />
         <option value="$PROJECT_DIR$/app/route.php" />
+        <option value="$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/js/myaction.js" />
+        <option value="$PROJECT_DIR$/app/dm/controller/IndexController.php" />
       </list>
     </option>
   </component>
@@ -231,10 +255,10 @@
       <path value="$PROJECT_DIR$/simplewind/vendor/sabberworm/php-css-parser" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="257" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="519" />
     <option name="y" value="13" />
-    <option name="width" value="1590" />
+    <option name="width" value="1328" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -243,7 +267,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,33 +282,39 @@
             <path>
               <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="dmServer" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dmServer" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dmServer" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="simpleboot3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dmServer" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="simpleboot3" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="dm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmServer" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="dm" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmServer" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmServer" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmServer" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="simpleboot3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,17 +327,17 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dmvideo\images" />
+      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dm" />
+      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dmvideo\common\layer-2.x\skin\default" />
+      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dmvideo\js\theme" />
+      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dmvideo\common" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dm\mobile\js" />
       <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dm" />
       <recent name="$PROJECT_DIR$/public/themes/simpleboot3/dm" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dmvideo\js\theme" />
-      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dmvideo\common\layer-2.x\skin\default" />
-      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dmvideo\common" />
-      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dm\mobile\common" />
-      <recent name="D:\php-prject\dmServer\public\themes\simpleboot3\dm\mobile" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -338,16 +367,18 @@
       <workItem from="1538976310926" duration="388000" />
       <workItem from="1539066587202" duration="10925000" />
       <workItem from="1539147808080" duration="1586000" />
+      <workItem from="1539234457903" duration="15316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56153000" />
+    <option name="totallyTimeSpent" value="71469000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="257" y="13" width="1590" height="1047" extended-state="0" />
+    <frame x="519" y="13" width="1328" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20130719" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24605678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -376,78 +407,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="659" column="9" selection-start-line="659" selection-start-column="9" selection-end-line="659" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simplewind/vendor/phpoffice/phpexcel/Classes/PHPExcel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="356" column="20" selection-start-line="356" selection-start-column="20" selection-end-line="356" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/dm/admin_user_info/unread.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/model/DmCategoryModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/dm/admin_user_info/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/admin_simpleboot3/dm/admin_user_info/check.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="57">
-            <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/user_action.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/portal/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/controller/AdminUserInfoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/password/password.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -474,13 +433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -614,20 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dm/controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/images/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="1543" column="28" lean-forward="true" selection-start-line="1543" selection-start-column="28" selection-end-line="1543" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/portal/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-865" />
@@ -657,41 +595,122 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="132" selection-start-line="132" selection-end-line="132" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/router.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/images/bot_hez.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/images/icon-m.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/common/images/icon-u.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/images/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="612" column="23" selection-start-line="612" selection-start-column="23" selection-end-line="612" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/js/jquery.validate/jquery.validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="1518" column="4" selection-start-line="1518" selection-start-column="4" selection-end-line="1518" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/js/validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="1130" column="8" selection-start-line="1130" selection-start-column="8" selection-end-line="1130" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dm/controller/AdminCategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1495" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dm/controller/AdminUserInfoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="204" column="41" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="204" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dm/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="389" selection-start-line="389" selection-end-line="389" />
+        <state relative-caret-position="259">
+          <caret line="314" column="27" selection-start-line="314" selection-start-column="27" selection-end-line="314" selection-end-column="27" />
           <folding>
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#span#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="56" column="7" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simplewind/thinkphp/library/think/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#6#80#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/themes/simpleboot3/dmvideo/js/myaction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+        <state relative-caret-position="590">
+          <caret line="197" column="38" lean-forward="true" selection-start-line="197" selection-start-column="38" selection-end-line="197" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/route.php">
+    <entry file="file://$PROJECT_DIR$/app/dm/controller/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+        <state relative-caret-position="725">
+          <caret line="69" column="26" lean-forward="true" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
           <folding>
-            <element signature="e#6#80#0#PHP" expanded="true" />
+            <element signature="e#624#653#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

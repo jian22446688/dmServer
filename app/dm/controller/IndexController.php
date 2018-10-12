@@ -10,7 +10,10 @@
 // +----------------------------------------------------------------------
 namespace app\dm\controller;
 
+use app\dm\model\DmUserModel;
 use cmf\controller\HomeBaseController;
+use think\Request;
+use think\Route;
 
 class IndexController extends HomeBaseController
 {
@@ -19,7 +22,8 @@ class IndexController extends HomeBaseController
             // 手机访问
             return $this->fetch('mobile/index');
         }
-        return $this->fetch(':index');
+//        return $this->fetch(':index');
+        return $this->fetch(':test');
     }
 
     /**
@@ -36,4 +40,33 @@ class IndexController extends HomeBaseController
         return 'cary';
     }
 
+    /**
+     * 用户提交数据
+     */
+    public function userSubmit(){
+       $reust = $this->request->param()['post'];
+        if (isset($reust['reg_name'])
+            || $reust['reg_name'] == ''
+            || isset($reust['reg_phone'])
+            || $reust['reg_phone'] == ''){
+            $mag['status'] = 1;
+            $mag['mag'] = '名称电话不能为空！请填写...';
+            return json($mag);
+        }
+        $data = [];
+        $data['name'] = $reust['reg_name'];
+        $data['company'] = $reust['reg_company'];
+        $data['phone'] = $reust['reg_phone'];
+        $data['site'] = $reust['reg_site'];
+        $data['description'] = isset($reust['description']) ? $reust['description']: '';
+        $mag = ['status'=> 0, 'mag'=> '信息发送成功', 'data'=> null];
+        $da = DmUserModel::create($data);
+        if(!$da){
+            $mag['status'] = 1;
+            $mag['mag'] = '信息发送失败';
+            return json($mag);
+        }
+        $mag['data'] = $data;
+        return json($mag);
+    }
 }
