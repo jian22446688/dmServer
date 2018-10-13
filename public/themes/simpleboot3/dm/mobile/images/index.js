@@ -106,7 +106,7 @@ define(function (require, exports, module) {
             })
         } else {
             $.ajax({
-                url: 'http://www.epwk' + GetDomainName() + '/index.php?do=ajax&view=advertis',
+                url: '########',
                 type: 'GET',
                 dataType: 'jsonp',
                 jsonp: 'callback',

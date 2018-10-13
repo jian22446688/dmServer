@@ -1,10 +1,6 @@
 $(document).ready(function() {
     console.log('sssss')
 
-
-    
-    // $('[placeholder]').placeholder();
-
     if ($('.layer-item').length > 0) {
         var lindex = parent.layer.getFrameIndex(window.name);
     }
@@ -17,7 +13,7 @@ $(document).ready(function() {
         $('.footer-submit').addClass('close-div');
     })
 
-    $(document).on('click', '.goto-top a,.goto-top', function () {
+    $(document).on('click', '.back-top', function () {
         $('html,body').animate({scrollTop: 0}, 1000);
     })
 
@@ -41,19 +37,17 @@ $(document).ready(function() {
         }
         $('html,body').animate({
             scrollTop: $('.page' + index).offset().top
-        },
-        500);
+        }, 500);
     })
 
     $(document).on('click', '.layer-close', function() {
-        console.log('ddddd');
         parent.layer.close(lindex);
     })
 
     $(document).on('click', '.layer-btn', function() {
-        console.log('ooooo');
         layer_open();
     })
+
 
     function layer_open() {
         layer.open({
@@ -65,7 +59,7 @@ $(document).ready(function() {
             shade: .8,
             shadeClose: false,
             area: ['500px', '400px'],
-            content: ['./layer-submit/index.html', 'no']
+            content: ["/layersubimt", 'no']
         })
     }
 
@@ -79,13 +73,16 @@ $(document).ready(function() {
         var p3 = $('.page3').offset().top;
         var p4 = $('.page4').offset().top;
         var p5 = $('.page5').offset().top;
+        var p6 = $('.page6').offset().top;
 
         if (topoff > 500) {
             $('.left-nav').css({
                 left: 20
             });
+            $('.back-top').show()
         } else {
             $('.left-nav').removeAttr('style');
+            $('.back-top').hide()
         }
 
         if (topoff >= p1 && topoff <= p2) {
@@ -107,6 +104,10 @@ $(document).ready(function() {
         if (topoff >= p5) {
             $('.left-nav-item span').removeClass('active');
             $('.left-nav-item span').eq(4).addClass('active');
+        }
+        if (topoff >= p6) {
+            $('.left-nav-item span').removeClass('active');
+            $('.left-nav-item span').eq(5).addClass('active');
         }
     })
 
@@ -150,10 +151,9 @@ $(document).ready(function() {
         }
         _this.find('button').attr('disabled', true);
         $.ajax({
-            url: 'http://www.epwk' + fn.GetDomainName() + '/index.php?do=ajax&view=advertis',
-            type: 'GET',
-            dataType: 'jsonp',
-            jsonp: 'callback',
+            url: '/userinfo',
+            type: 'post',
+            dataType: 'json',
             data: {
                 'reg_name': u,
                 'reg_username': u,
@@ -182,6 +182,29 @@ $(document).ready(function() {
             }
         })
     }
+
+    $('#inputTest').click(function () {
+
+        $.ajax({
+            url: '/dm/Index/userSubmit',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                reg_name: 'cary',
+                reg_phone: '13620956841',
+                reg_company: 'cary_company',
+                reg_site: 'shenzhenlonghua'
+            },
+            success: function (json) {
+                console.log(json)
+            },
+            error: function (err) {
+
+                console.log(err)
+            }
+        })
+
+    })
 
 
 });

@@ -1012,7 +1012,7 @@ input[type=password],input[type=text] {
 }
 
 .head .headbox .header-nav {
-	width: 560px;
+	width: 820px;
 	height: 40px;
 	position: absolute;
 	right: 0;
@@ -1029,18 +1029,18 @@ input[type=password],input[type=text] {
 }
 
 .head .headbox .header-submit {
-	width: 300px;
 	height: 70px;
 	position: absolute;
 	top: 514px;
-	left: 450px;
+	left: 380px;
 	z-index: 10
 }
 
 .head .headbox .header-submit button {
-	width: 300px;
 	height: 70px;
-	padding: 0;
+	padding-left: 32px;
+	padding-right: 32px;
+	margin: 0 16px;
 	font-size: 30px;
 	text-align: center;
 	line-height: 30px
@@ -1517,7 +1517,7 @@ input[type=password],input[type=text] {
 .left-nav {
 	position: fixed;
 	left: -100px;
-	top: 20%;
+	top: 10%;
 	z-index: 100;
 	width: 79px;
 	background: url("nav_01.png") no-repeat 0 0;
@@ -1561,3 +1561,13 @@ input[type=password],input[type=text] {
 	display: block;
 	cursor: pointer
 }/*SUN-FILE GENERATE:2018-4-25 17:0:23*/
+
+.back-top {
+	display: none;
+	position: fixed;
+	right: 32px;
+	bottom: 32px;
+	text-align: center;
+	cursor: pointer;
+	background: url("../images/gTopa.png") no-repeat;
+}
