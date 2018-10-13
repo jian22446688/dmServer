@@ -128,7 +128,7 @@ $(document).ready(function() {
             $('.left-nav-item span').removeClass('active');
             $('.left-nav-item span').eq(3).addClass('active');
         }
-        if (topoff >= p5) {
+        if (topoff >= p5 && topoff <= p6) {
             $('.left-nav-item span').removeClass('active');
             $('.left-nav-item span').eq(4).addClass('active');
         }
