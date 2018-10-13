@@ -7,13 +7,16 @@
     <meta name="description" content="一品威客网影视制作专栏，专业提供各类微电影、宣传片、影视广告制作服务的服务商，平台集合上千家知名影视广告制作公司，众多知名创意团队，可为客户提供多重选择方案，给予客户最优的服务和产品" />
 
     <link rel="stylesheet" href="__TMPL__/dmvideo/images/css.css">
-    <link rel="stylesheet" href="__TMPL__/dmvideo/js/layer/default/layer.css" />
+    <link rel="stylesheet" href="__TMPL__/dmvideo/js/theme/default/layer.css" />
 
 </head>
 <body>
+<!--统一背景图片-->
+<div class="d-background"></div>
+
 <div class="head page0">
     <div class="headbox">
-        <div class="logo"><a href="{rul('index')}" target="_blank"></a></div>
+        <div class="logo"><a href="{:url('index')}"></a></div>
         <div class="header-nav">
             <span>服务优势</span>
             <span>解决方案</span>
@@ -30,23 +33,22 @@
     </div>
 </div>
 
-<div class="bg1 page1">
+<div class="page1">
     <div class="container">
-        <div class="blk100"></div>
-        <div class="clearfix t_c font70 lh100 cffe"><b>专业团队挖掘广告与艺术的力量</b></div>
-        <div class="blk40"></div>
-        <div class="clearfix"><img src="__TMPL__/dmvideo/images/index_04.jpg.png" alt=""></div>
+        <!--<div class="blk100"></div>-->
+        <!--<div class="blk35"></div>-->
+        <div class="clearfix"><img src="__TMPL__/dmvideo/dmimg/d-2.png" alt=""></div>
         <div class="clear"></div>
     </div>
     <div class="clear"></div>
 </div>
 
-
 <div class="container page2">
     <div class="clearfix t_c font70 lh90 pt40"><b>匠心精心打磨，制作品质影视</b></div>
     <div class="clearfix t_c font20 lh30 pb30">拍摄策划+创意文案+后期制作一站式服务，轻松搞定宣传片</div>
     <div class="chuangyi-tab">
-        <span style="margin-right: 25px;"></span>
+        <span></span>
+        <span></span>
         <span></span>
         <span></span>
     </div>
@@ -204,16 +206,66 @@
                 </li>
             </ul>
         </div>
+        <div class="chuangyi-item bg4" style="display: none;">
+            <ul>
+                <li>
+                    <div class="clearfix font40 lh50">cary服务</div>
+                    <div class="clearfix label-btn">
+                        <span>视频剪辑</span>
+                        <span>音频剪辑</span>
+                        <span>视频合成</span>
+                    </div>
+                    <div class="clearfix t_c">
+                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="clearfix font40 lh50">配音服务</div>
+                    <div class="clearfix label-btn">
+                        <span>动漫配音</span>
+                        <span>方言配音</span>
+                        <span>文艺配音</span>
+                        <span>外语配音</span>
+                    </div>
+                    <div class="clearfix t_c">
+                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="clearfix font40 lh50">后期特效</div>
+                    <div class="clearfix label-btn">
+                        <span>3D特效</span>
+                        <span>U3D特效</span>
+                        <span>特效字幕</span>
+                        <span>声音特效</span>
+                    </div>
+                    <div class="clearfix t_c">
+                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="clearfix font40 lh50">片头制作</div>
+                    <div class="clearfix label-btn">
+                        <span>LOGO片头</span>
+                        <span>宣传片片头</span>
+                        <span>影视片头</span>
+                    </div>
+                    <div class="clearfix t_c">
+                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <div class="clear"></div>
     </div>
     <div class="clear"></div>
 </div>
 
-<div style="background: #ffea00;" class="page3">
-    <div class="container">
+<div class="page3">
+    <div class="container" style="background-color: #000; ">
         <div class="clearfix t_c font70 lh90 pt60"><b>案例展示</b></div>
         <div class="clearfix t_c font20 lh30 pb30">专注影视制作领域，1000部经典宣传片、广告片、影视剧等作品</div>
-        <div class="video-list">
+        <div class="video-list d-product-video c333">
             <ul>
                 <li>
                     <em><img src="__TMPL__/dmvideo/images/index_11.jpg" alt=""></em>
@@ -252,7 +304,7 @@
                     <span>Tenline2016对口型大作战宣传片头</span>
                 </li>
             </ul>
-            <div class="blk50 page4"></div>
+            <div class="blk50 "></div>
         </div>
 
         <div class="clear"></div>
@@ -260,11 +312,11 @@
     <div class="clear"></div>
 </div>
 
-<div style="background: #ffea00;" class="page5">
-    <div class="container">
-        <div class="clearfix t_c font70 lh90 pt60"><b>案例展示</b></div>
+<div class="page4">
+    <div class="container" style="background-color: #000">
+        <div class="clearfix t_c font70 lh90 pt60"><b>设备展示</b></div>
         <div class="clearfix t_c font20 lh30 pb30">专注影视制作领域，1000部经典宣传片、广告片、影视剧等作品</div>
-        <div class="video-list">
+        <div class="video-list d-product-img c333">
             <ul>
                 <li>
                     <em><img src="__TMPL__/dmvideo/images/index_11.jpg" alt=""></em>
@@ -309,15 +361,17 @@
     <div class="clear"></div>
 </div>
 
-<div class="container">
+<div class="container" style="background-color: #000; color: #fff">
+    <div class="blk50 page5"></div>
     <div class="clearfix t_c font70 lh100 pt40 pb20"><b>服务流程</b></div>
-    <div class="clearfix t_c"><img src="__TMPL__/dmvideo/images/index_33.jpg" alt=""></div>
+    <div class="clearfix t_c lh24 font24 pb20 cccc"><p>拥有行业内最先进专业影视拍摄及制作设备</p></div>
+    <div class="clearfix t_c"><img src="__TMPL__/dmvideo/dmimg/d-fuwulc.png" alt=""></div>
     <div class="blk80 page6"></div>
     <div class="clear"></div>
 </div>
 
 <div class="submit-tow">
-    <div class="container">
+    <div class="container" >
         <div class="blk100"></div>
         <div class="blk100"></div>
         <div class="blk20"></div>
@@ -337,29 +391,26 @@
     </div>
 </div>
 
-
-
-
-<div style="background-color: #222236;">
-    <div class="container hezhuoban clearfix">
-        <div class="elment icon1">
-            <a href="http://www.epwk.com/zt/epweike141013/" target="_blank"></a>
-        </div>
-        <div class="elment icon2">
-            <a href="http://www.epwk.com/zt/Talent_Xiamen/" target="_blank"></a>
-        </div>
-        <div class="elment icon3">
-            <a href="javascript:;"></a>
-        </div>
-        <div class="elment icon4">
-            <a href="http://www.epwk.com/zt/rongzi1602/" target="_blank"></a>
-        </div>
-        <div class="elment icon5">
-            <a href="javascript:void(0);"></a>
-        </div>
-    </div>
-    <div class="clear"></div>
-</div>
+<!--<div style="background-color: #222236;">-->
+    <!--<div class="container hezhuoban clearfix">-->
+        <!--<div class="elment icon1">-->
+            <!--<a href="http://www.epwk.com/zt/epweike141013/" target="_blank"></a>-->
+        <!--</div>-->
+        <!--<div class="elment icon2">-->
+            <!--<a href="http://www.epwk.com/zt/Talent_Xiamen/" target="_blank"></a>-->
+        <!--</div>-->
+        <!--<div class="elment icon3">-->
+            <!--<a href="javascript:;"></a>-->
+        <!--</div>-->
+        <!--<div class="elment icon4">-->
+            <!--<a href="http://www.epwk.com/zt/rongzi1602/" target="_blank"></a>-->
+        <!--</div>-->
+        <!--<div class="elment icon5">-->
+            <!--<a href="javascript:void(0);"></a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="clear"></div>-->
+<!--</div>-->
 
 <div class="footer_black">
     <div class="footerbox">
@@ -438,6 +489,7 @@
     </div>
     <span class="goto-top"></span>
 </div>
+
 
 <!-- <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script> -->
 <script type="text/javascript" src="__TMPL__/dmvideo/js/jquery-1.11.3.min.js"></script>

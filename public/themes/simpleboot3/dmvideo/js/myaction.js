@@ -1,13 +1,13 @@
 $(document).ready(function() {
-    console.log('sssss')
-
+    console.log('sssss 1')
     if ($('.layer-item').length > 0) {
         var lindex = parent.layer.getFrameIndex(window.name);
     }
 
-    // setTimeout(function () {
-    //     $('.footer-submit').removeClass('close-div');
-    // }, 5000)
+    $('.d-background').css({
+        height: document.body.scrollHeight
+    })
+
 
     $(document).on('click', '.footer-submit .close', function () {
         $('.footer-submit').addClass('close-div');
@@ -24,13 +24,18 @@ $(document).ready(function() {
     })
 
 
-    $(document).on('click', '.header-nav span, .left-nav-item span',
-    function() {
+    $(document).on('click', '.header-nav span, .left-nav-item span', function() {
         var index = $(this).index(),
         index = index + 1;
-        if (index == 5) {
+        if (index === 6) {
             layer_open();
             return false;
+        }
+        if (index === 7){
+            // 点击关于我们
+
+            console.log('关于我们')
+            return false
         }
         if ($(this).parent().attr('class') == 'left-nav-item') {
             $(this).siblings('span').removeClass('active').end().addClass('active');
@@ -60,6 +65,28 @@ $(document).ready(function() {
             shadeClose: false,
             area: ['500px', '400px'],
             content: ["/layersubimt", 'no']
+        })
+    }
+
+    $('.d-product-video li').click(function (event) {
+
+        console.log('li click')
+
+        layer_videoPlay()
+    })
+
+
+    function layer_videoPlay(){
+        layer.open({
+            title: false,
+            type: 2,
+            skin: "layui-layer-rim",
+            closeBtn: 1,
+            scrollbar: false,
+            shade: .8,
+            shadeClose: false,
+            area: ["1024px", "576px"],
+            content: ["/d/play/1", "no"]
         })
     }
 
@@ -183,17 +210,17 @@ $(document).ready(function() {
         })
     }
 
+    // 提交用户信息接口
     $('#inputTest').click(function () {
-
         $.ajax({
             url: '/dm/Index/userSubmit',
             type: 'POST',
             dataType: 'json',
             data: {
-                reg_name: 'cary',
-                reg_phone: '13620956841',
-                reg_company: 'cary_company',
-                reg_site: 'shenzhenlonghua'
+                    reg_name: 'cary',
+                    reg_phone: '13620956841',
+                    reg_company: 'cary_company',
+                    reg_site: 'shenzhenlonghua'
             },
             success: function (json) {
                 console.log(json)

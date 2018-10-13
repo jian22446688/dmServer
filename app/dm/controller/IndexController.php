@@ -15,15 +15,14 @@ use cmf\controller\HomeBaseController;
 use think\Request;
 use think\Route;
 
-class IndexController extends HomeBaseController
-{
+class IndexController extends HomeBaseController {
     public function index(){
         if (cmf_is_mobile()){
             // 手机访问
             return $this->fetch('mobile/index');
         }
-//        return $this->fetch(':index');
-        return $this->fetch(':test');
+        return $this->fetch(':index');
+//        return $this->fetch(':test');
     }
 
     /**
@@ -36,19 +35,27 @@ class IndexController extends HomeBaseController
     }
 
     public function test(){
+        $info_file = include(CMF_ROOT . '/app/dm/config.base.php');
+        $info_file = $info_file ? $info_file : array();
 
-        return 'cary';
+
+
+        return json($info_file);
+    }
+
+
+    public function play() {
+
+        return $this->fetch('layer-submit/play-page');
     }
 
     /**
      * 用户提交数据
      */
     public function userSubmit(){
-       $reust = $this->request->param()['post'];
-        if (isset($reust['reg_name'])
-            || $reust['reg_name'] == ''
-            || isset($reust['reg_phone'])
-            || $reust['reg_phone'] == ''){
+        $reust = $this->request->param();
+        $mag = ['status'=> 0, 'mag'=> '信息发送成功', 'data'=> null];
+        if ( $reust['reg_name'] == '' || $reust['reg_phone'] == ''){
             $mag['status'] = 1;
             $mag['mag'] = '名称电话不能为空！请填写...';
             return json($mag);
@@ -59,14 +66,13 @@ class IndexController extends HomeBaseController
         $data['phone'] = $reust['reg_phone'];
         $data['site'] = $reust['reg_site'];
         $data['description'] = isset($reust['description']) ? $reust['description']: '';
-        $mag = ['status'=> 0, 'mag'=> '信息发送成功', 'data'=> null];
         $da = DmUserModel::create($data);
         if(!$da){
             $mag['status'] = 1;
             $mag['mag'] = '信息发送失败';
             return json($mag);
         }
-        $mag['data'] = $data;
+        $mag['data'] = $da;
         return json($mag);
     }
 }

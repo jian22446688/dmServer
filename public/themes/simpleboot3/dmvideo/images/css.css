@@ -880,7 +880,7 @@ a:hover,body {
 
 .container {
 	width: 1200px;
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 .clear {
@@ -988,7 +988,7 @@ input[type=password],input[type=text] {
 
 .head {
 	height: 650px;
-	background: url("index_01.jpg") no-repeat center 0
+	background: url("../dmimg/d-index-1.jpg") no-repeat center 0
 }
 
 .head .headbox {
@@ -1000,15 +1000,16 @@ input[type=password],input[type=text] {
 
 .head .headbox .logo {
 	position: absolute;
-	left: 55px;
-	top: 75px;
-	width: 180px;
-	height: 55px
+	left: 36px;
+	top: 36px;
+	width: 277px;
+	height: 80px;
+	background: url("../dmimg/d-logo.png") no-repeat;
 }
 
 .head .headbox .logo a {
 	display: block;
-	height: 55px
+	height: 80px
 }
 
 .head .headbox .header-nav {
@@ -1016,7 +1017,7 @@ input[type=password],input[type=text] {
 	height: 40px;
 	position: absolute;
 	right: 0;
-	top: 80px;
+	top: 60px;
 	z-index: 10
 }
 
@@ -1031,7 +1032,7 @@ input[type=password],input[type=text] {
 .head .headbox .header-submit {
 	height: 70px;
 	position: absolute;
-	top: 514px;
+	top: 534px;
 	left: 380px;
 	z-index: 10
 }
@@ -1300,18 +1301,17 @@ input[type=password],input[type=text] {
 
 .chuangyi-tab {
 	width: 960px;
-	height: 80px;
-	background-image: url("tab-bg.jpg");
+	height: 71px;
+	background-image: url("../dmimg/tab-bg.png");
 	background-repeat: no-repeat;
-	padding-left: 240px
+	padding-left: 238px
 }
 
 .chuangyi-tab span {
 	display: block;
 	float: left;
-	width: 260px;
-	height: 60px;
-	padding-top: 20px;
+	width: 238px;
+	height: 70px;
 	cursor: pointer
 }
 
@@ -1320,11 +1320,14 @@ input[type=password],input[type=text] {
 }
 
 .chuangyi-tab.active1 {
-	background-position: center -80px
+	background-position: center -71px
 }
 
 .chuangyi-tab.active2 {
-	background-position: center -160px
+	background-position: center -142px
+}
+.chuangyi-tab.active3 {
+	background-position: center -212.5px
 }
 
 .chuangyi-wrap {
@@ -1335,7 +1338,7 @@ input[type=password],input[type=text] {
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	height: 590px;
-	background-color: #fff;
+	background-color: #d8dbdb;
 	padding-left: 310px;
 	padding-right: 30px;
 	width: 860px;
@@ -1343,16 +1346,20 @@ input[type=password],input[type=text] {
 }
 
 .chuangyi-wrap .chuangyi-item.bg1 {
-	background-image: url("002.jpg")
+	background-image: url("../dmimg/d-index-3-bg.png")
 }
 
 .chuangyi-wrap .chuangyi-item.bg2 {
-	background-image: url("index_07.jpg")
+	background-image: url("../dmimg/d-index-3-bg.png")
 }
 
 .chuangyi-wrap .chuangyi-item.bg3 {
-	background-image: url("003.jpg")
+	background-image: url("../dmimg/d-index-3-bg.png")
 }
+.chuangyi-wrap .chuangyi-item.bg4 {
+	background-image: url("../dmimg/d-index-3-bg.png")
+}
+
 
 .chuangyi-wrap .chuangyi-item li {
 	width: 360px;
@@ -1446,7 +1453,7 @@ input[type=password],input[type=text] {
 }
 
 .submit-tow {
-	background: url("index_35.jpg") no-repeat center 0;
+	background: url("../dmimg/d-submit.png") no-repeat center 0;
 	height: 499px
 }
 
@@ -1570,4 +1577,26 @@ input[type=password],input[type=text] {
 	text-align: center;
 	cursor: pointer;
 	background: url("../images/gTopa.png") no-repeat;
+}
+
+.d-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('bg.png') repeat-y center;
+	z-index: -9999;
+}
+
+.page2 {
+	background-color: #d8dbdb;
+}
+
+.page3 {
+	color: #fff;
+}
+
+.page4 {
+	color: #fff;
 }

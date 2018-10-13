@@ -55,9 +55,11 @@ $(document).ready(function () {
             shade: .8,
             shadeClose: false,
             area: ["500px", "400px"],
-            content: ["layer.php?action=1", "no"]
+            content: ["#", "no"]
         })
     }
+
+
     $(window).on("scroll ready",
         function() {
             if ($(".layer-item").length > 0) {

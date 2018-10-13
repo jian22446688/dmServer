@@ -32,8 +32,7 @@ class AdminPageController extends AdminBaseController
      *     'param'  => ''
      * )
      */
-    public function index()
-    {
+    public function index() {
         return $this->fetch();
     }
 
@@ -50,8 +49,7 @@ class AdminPageController extends AdminBaseController
      *     'param'  => ''
      * )
      */
-    public function add()
-    {
+    public function add() {
 
     }
 
@@ -68,8 +66,7 @@ class AdminPageController extends AdminBaseController
      *     'param'  => ''
      * )
      */
-    public function addPost()
-    {
+    public function addPost() {
 
 
     }
@@ -87,8 +84,7 @@ class AdminPageController extends AdminBaseController
      *     'param'  => ''
      * )
      */
-    public function edit()
-    {
+    public function edit() {
 
     }
 
@@ -105,9 +101,44 @@ class AdminPageController extends AdminBaseController
      *     'param'  => ''
      * )
      */
-    public function editPost()
-    {
+    public function editPost() {
+        $confPath = CMF_ROOT . '/app/front/config.php';
+        $info_file = include(CMF_ROOT . '/app/front/config.php');
+        $info_file = $info_file ? $info_file : array();
+        $web_name = 'frontweb_about';
+        if($this->request->isPost()){
+            $data = $this->request->param()['post'];
+            $b = ['title'    => $data['title'],
+                'content1'  => htmlspecialchars_decode($data['content1']),
+                'content2'  => htmlspecialchars_decode($data['content2']),
+                'content3'  => htmlspecialchars_decode($data['content3']),
+                'content4'  => htmlspecialchars_decode($data['content4']),
+                'img1' => $data['img1'],
+                'img2' => $data['img2'],
+                'img3' => $data['img3'],
+                'img4' => $data['img4'],
+                'img5' => $data['img5'],
+                'img6' => $data['img6'],
+            ];
+            $info_file[$web_name] = $b;
+            if(file_exists($confPath)){
+                // 写入文件，这里是关键
+                $result = file_put_contents($confPath, "<?php\nreturn " . var_export($info_file, true).';');
+                if($result){
+                    $this -> success('保存成功');
+                }else{
+                    $this -> error('保存失败');
+                }
+            }else{
+                $this -> error('配置文件不存在！');
+            }
+        }
+        $webdata = $info_file[$web_name];
 
+//        dump($webdata); die;
+
+        $this->assign('webdata', $webdata);
+        return $this->fetch('base_about');
 
     }
 
@@ -125,8 +156,7 @@ class AdminPageController extends AdminBaseController
      *     'param'  => ''
      * )
      */
-    public function delete()
-    {
+    public function delete() {
 
 
     }
