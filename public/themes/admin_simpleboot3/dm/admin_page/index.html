@@ -3,95 +3,259 @@
 <body>
 <div class="wrap js-check-wrap">
     <ul class="nav nav-tabs">
-        <li class="active"><a href="{:url('AdminPage/index')}">页面管理</a></li>
-        <li><a href="{:url('AdminPage/add')}">添加页面</a></li>
+        <li class="active"><a href="javascript:">页面管理</a></li>
+        <li><a href="{:url('AdminPage/confSolution')}">解决方案配置</a></li>
     </ul>
-    <form class="well form-inline margin-top-20" method="post" action="{:url('AdminPage/index')}">
-        标题:
-        <input type="text" class="form-control" name="keyword" style="width: 200px;"
-               value="{$keyword|default=''}" placeholder="请输入关键字">
-        <button class="btn btn-primary">搜索</button>
-    </form>
-    <form class="js-ajax-form" method="post">
-        <div class="table-actions">
-            <button class="btn btn-danger btn-sm js-ajax-submit" type="submit" data-action="{:url('AdminPage/delete')}"
-                    data-subcheck="true" data-msg="{:lang('DELETE_CONFIRM_MESSAGE')}">{:lang('DELETE')}
-            </button>
+
+    <form action="{:url('AdminPage/confLogo')}" method="post" class="form-horizontal js-ajax-form margin-top-20">
+        <div class="row">
+            <div class="col-md-3">
+                <table class="table table-bordered">
+                    <tr>
+                        <th><b>首页logo图片</b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="text-align: center;">
+                                <input type="hidden" name="post[file_logo]" id="logo_thumbnail" value="{$conf['dm_home_logo']|default=''}">
+                                <a href="javascript:uploadOneImage('图片上传','#logo_thumbnail');">
+                                    <if condition="empty($conf['dm_home_logo'])">
+                                        <img src="__TMPL__/public/assets/images/default-thumbnail.png"
+                                             id="logo_thumbnail-preview"
+                                             width="135" style="cursor: pointer"/>
+                                        <else/>
+                                        <img src="{:cmf_get_image_preview_url($conf['dm_home_logo'])}"
+                                             id="logo_thumbnail-preview"
+                                             width="135" style="cursor: pointer"/>
+                                    </if>
+                                </a>
+                                <input type="button" class="btn btn-sm logo_btn-cancel-thumbnail" value="取消图片">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><b> logo 图片大小：260px - 270px 宽度； 80px 高度</b></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-3">
+                <table class="table table-bordered">
+                    <tr>
+                        <th><b>首页背景图</b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="text-align: center;">
+                                <input type="hidden" name="post[file_one_bg]" id="conf_top_bg_thumbnail" value="{$conf['dm_home_nav_1']|default=''}">
+                                <a href="javascript:uploadOneImage('图片上传','#conf_top_bg_thumbnail');">
+                                    <if condition="empty($conf['dm_home_nav_1'])">
+                                        <img src="__TMPL__/public/assets/images/default-thumbnail.png"
+                                             id="conf_top_bg_thumbnail-preview"
+                                             width="135" style="cursor: pointer"/>
+                                        <else/>
+                                        <img src="{:cmf_get_image_preview_url($conf['dm_home_nav_1'])}"
+                                             id="conf_top_bg_thumbnail-preview"
+                                             width="135" style="cursor: pointer"/>
+                                    </if>
+                                </a>
+                                <input type="button" class="btn btn-sm top_bg_btn-cancel-thumbnail" value="取消图片">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><b> 首页背景图 尺寸：1200px x 658px</b></th>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="col-md-3">
+                <table class="table table-bordered">
+                    <tr>
+                        <th><b>服务优势背景图</b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="text-align: center;">
+                                <input type="hidden" name="post[file_two_bg]" id="conf_top_one_thumbnail" value="{$conf['dm_home_nav_2']|default=''}">
+                                <a href="javascript:uploadOneImage('图片上传','#conf_top_one_thumbnail');">
+                                    <if condition="empty($conf['dm_home_nav_2'])">
+                                        <img src="__TMPL__/public/assets/images/default-thumbnail.png"
+                                             id="conf_top_one_thumbnail-preview"
+                                             width="135" style="cursor: pointer"/>
+                                        <else/>
+                                        <img src="{:cmf_get_image_preview_url($conf['dm_home_nav_2'])}"
+                                             id="conf_top_bg_thumbnail-preview"
+                                             width="135" style="cursor: pointer"/>
+                                    </if>
+
+                                </a>
+                                <input type="button" class="btn btn-sm btn-conf_top_one_thumbnail" value="取消图片">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><b> 服务优势背景图 尺寸：1200px x 720px</b></th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-md-3">
+                <table class="table table-bordered">
+                    <tr>
+                        <th><b>服务流程背景图</b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="text-align: center;">
+                                <input type="hidden" name="post[file_service_bg]" id="conf_top_service_thumbnail" value="{$conf['dm_home_service']|default=''}">
+                                <a href="javascript:uploadOneImage('图片上传','#conf_top_service_thumbnail');">
+                                    <if condition="empty($conf['dm_home_service'])">
+                                        <img src="__TMPL__/public/assets/images/default-thumbnail.png"
+                                             id="conf_top_service_thumbnail-preview"
+                                             width="135" style="cursor: pointer"/>
+                                        <else/>
+                                        <img src="{:cmf_get_image_preview_url($conf['dm_home_service'])}"
+                                             id="conf_top_service_thumbnail-preview"
+                                             width="135" style="cursor: pointer"/>
+                                    </if>
+
+                                </a>
+                                <input type="button" class="btn btn-sm conf_top_service_thumbnail" value="取消图片">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><b> 服务流程背景图 尺寸：1200px x 150px</b></th>
+                    </tr>
+                </table>
+
+            </div>
+
         </div>
-        <table class="table table-hover table-bordered table-list">
-            <thead>
-            <tr>
-                <th width="16">
-                    <label>
-                        <input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x">
-                    </label>
-                </th>
-                <th width="100">ID</th>
-                <th>标题</th>
-                <th width="80">作者</th>
-                <th width="160">发布时间</th>
-                <th width="80">状态</th>
-                <th width="120">操作</th>
-            </tr>
-            </thead>
-            <php>$status=array("1"=>'已发布',"0"=>'未发布');</php>
-            <foreach name="pages" item="vo">
-                <tr>
-                    <td>
-                        <input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]"
-                               value="{$vo.id}">
-                    </td>
-                    <td>{$vo.id}</td>
-                    <td>
-                        <a href="{:url('portal/page/index',array('id'=>$vo['id']))}" target="_blank">
-                            {$vo.post_title}
-                        </a>
-                    </td>
-                    <td>{$vo.user_nickname}</td>
-                    <td>
-                        <empty name="vo.published_time">
-                            未发布
-                            <else/>
-                            {:date('Y-m-d H:i',$vo['published_time'])}
-                        </empty>
-                    </td>
-                    <td>
-                        <notempty name="vo.post_status">
-                            <a data-toggle="tooltip" title="已发布"><i class="fa fa-check"></i></a>
-                            <else/>
-                            <a data-toggle="tooltip" title="未发布"><i class="fa fa-close"></i></a>
-                        </notempty>
-                    </td>
-                    <td>
-                        <a href="{:url('AdminPage/edit',array('id'=>$vo['id']))}">{:lang('EDIT')}</a>
-                        <a href="{:url('AdminPage/delete',array('id'=>$vo['id']))}" class="js-ajax-delete">{:lang('DELETE')}</a>
-                    </td>
-                </tr>
-            </foreach>
-            <tfoot>
-            <tr>
-                <th width="16">
-                    <label>
-                        <input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x">
-                    </label>
-                </th>
-                <th width="100">ID</th>
-                <th>标题</th>
-                <th width="80">作者</th>
-                <th width="160">发布时间</th>
-                <th>状态</th>
-                <th width="120">操作</th>
-            </tr>
-            </tfoot>
-        </table>
-        <div class="table-actions">
-            <button class="btn btn-danger btn-sm js-ajax-submit" type="submit" data-action="{:url('AdminPage/delete')}"
-                    data-subcheck="true" data-msg="你确定删除吗？">{:lang('DELETE')}
-            </button>
+        <hr>
+
+        <div class="row" style="margin-left: 6px">
+            <h2 style="font-weight: bold;">解决方案</h2>
+            <div class="col-md-9">
+                <table class="table table-bordered">
+                    <tr>
+                        <th width="100">标题<span class="form-required">*</span></th>
+                        <td >
+                            <input class="form-control" type="text" name="post[dm_solution][title]"
+                                   required value="{$conf['dm_solution']['title']|default=''}" placeholder="请输入标题"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="100">副标题<span class="form-required">*</span></th>
+                        <td >
+                            <input class="form-control" type="text" name="post[dm_solution][subtitle]"
+                                   required value="{$conf['dm_solution']['subtitle']|default=''}" placeholder="请输入副标题"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="pagination">{$page}</div>
+
+        <div class="row" style="margin-left: 6px">
+            <h2 style="font-weight: bold;">案例展示</h2>
+            <div class="col-md-9">
+                <table class="table table-bordered">
+                    <tr>
+                        <th width="100">标题<span class="form-required">*</span></th>
+                        <td >
+                            <input class="form-control" type="text" name="post[dm_caseshow][title]"
+                                   required value="{$conf['dm_caseshow']['title']|default=''}" placeholder="请输入标题"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="100">副标题<span class="form-required">*</span></th>
+                        <td >
+                            <input class="form-control" type="text" name="post[dm_caseshow][subtitle]"
+                                   required value="{$conf['dm_caseshow']['subtitle']|default=''}" placeholder="请输入副标题"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row" style="margin-left: 6px">
+            <h2 style="font-weight: bold;">设备展示</h2>
+            <div class="col-md-9">
+                <table class="table table-bordered">
+                    <tr>
+                        <th width="100">标题<span class="form-required">*</span></th>
+                        <td >
+                            <input class="form-control" type="text" name="post[dm_productshow][title]"
+                                   required value="{$conf['dm_productshow']['title']|default=''}" placeholder="请输入标题"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="100">副标题<span class="form-required">*</span></th>
+                        <td >
+                            <input class="form-control" type="text" name="post[dm_productshow][subtitle]"
+                                   required value="{$conf['dm_productshow']['subtitle']|default=''}" placeholder="请输入副标题"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 6px">
+            <h2 style="font-weight: bold;">服务流程</h2>
+            <div class="col-md-9">
+                <table class="table table-bordered">
+                    <tr>
+                        <th width="100">标题<span class="form-required">*</span></th>
+                        <td >
+                            <input class="form-control" type="text" name="post[dm_service][title]"
+                                   required value="{$conf['dm_service']['title']|default=''}" placeholder="请输入标题"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="100">副标题<span class="form-required">*</span></th>
+                        <td >
+                            <input class="form-control" type="text" name="post[dm_service][subtitle]"
+                                   required value="{$conf['dm_service']['subtitle']|default=''}" placeholder="请输入副标题"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class=" col-sm-10">
+                <button type="submit" class="btn btn-primary js-ajax-submit">{:lang('SAVE')}</button>
+            </div>
+        </div>
+
     </form>
+
 </div>
 <script src="__STATIC__/js/admin.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        $('.top_bg_btn-cancel-thumbnail').click(function () {
+            $('#top_bg_thumbnail-preview').attr('src', '__TMPL__/public/assets/images/default-thumbnail.png');
+            $('#conf_top_bg_thumbnail').val('');
+        });
+
+        $('.logo_btn-cancel-thumbnail').click(function () {
+            $('#logo_thumbnail-preview').attr('src', '__TMPL__/public/assets/images/default-thumbnail.png');
+            $('#conf_logo_thumbnail').val('');
+        });
+
+        $('.btn-conf_top_one_thumbnail').click(function () {
+            $('#conf_top_one_thumbnail-preview').attr('src', '__TMPL__/public/assets/images/default-thumbnail.png');
+            $('#conf_top_one_thumbnail').val('');
+        });
+
+        $('.btn-conf_top_service_thumbnail').click(function () {
+            $('#conf_top_service_thumbnail-preview').attr('src', '__TMPL__/public/assets/images/default-thumbnail.png');
+            $('#conf_top_service_thumbnail').val('');
+        });
+
+    });
+
+</script>
 </body>
 </html>

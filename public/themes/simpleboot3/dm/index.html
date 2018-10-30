@@ -10,13 +10,18 @@
     <link rel="stylesheet" href="__TMPL__/dmvideo/js/theme/default/layer.css" />
 
 </head>
-<body>
+<body style="background-color: #000">
 <!--统一背景图片-->
 <div class="d-background"></div>
 
-<div class="head page0">
+<php>
+    $imgbg = cmf_get_image_url($info_file['dm_home_nav_1']);
+    $img_logo = cmf_get_image_url($info_file['dm_home_logo']);
+</php>
+
+<div class="head page0" style="background: url('{$imgbg}') no-repeat center 0">
     <div class="headbox">
-        <div class="logo"><a href="{:url('index')}"></a></div>
+        <div class="logo" style="background: url('{$img_logo}') no-repeat;"><a href="{:url('index')}"></a></div>
         <div class="header-nav">
             <span>服务优势</span>
             <span>解决方案</span>
@@ -37,272 +42,98 @@
     <div class="container">
         <!--<div class="blk100"></div>-->
         <!--<div class="blk35"></div>-->
-        <div class="clearfix"><img src="__TMPL__/dmvideo/dmimg/d-2.png" alt=""></div>
+        <div class="clearfix"><img src="{:cmf_get_image_url($info_file['dm_home_nav_2'])}" alt=""></div>
         <div class="clear"></div>
     </div>
     <div class="clear"></div>
 </div>
 
 <div class="container page2">
-    <div class="clearfix t_c font70 lh90 pt40"><b>匠心精心打磨，制作品质影视</b></div>
-    <div class="clearfix t_c font20 lh30 pb30">拍摄策划+创意文案+后期制作一站式服务，轻松搞定宣传片</div>
+    <div class="clearfix t_c font70 lh90 pt40"><b>{$info_file['dm_solution']['title']|default=''}</b></div>
+    <div class="clearfix t_c font20 lh30 pb30">{$info_file['dm_solution']['subtitle']|default=''}</div>
     <div class="chuangyi-tab">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <volist name="solutree" id="vo" key="kk">
+            <if condition="($kk == 1)">
+                <span class="active">{$vo['title']}</span>
+                <else/>
+                <span >{$vo['title']}</span>
+            </if>
+        </volist>
     </div>
     <div class="chuangyi-wrap">
-        <div class="chuangyi-item bg1">
-            <ul>
-                <li>
-                    <div class="clearfix font40 lh50">宣传片制作</div>
-                    <div class="clearfix label-btn">
-                        <span>企业宣传片</span>
-                        <span>产品宣传片</span>
-                        <span>公益宣传片</span>
-                        <span>公益宣传片</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="clearfix font40 lh50">广告片拍摄</div>
-                    <div class="clearfix label-btn">
-                        <span>珠宝广告片</span>
-                        <span>汽车广告片</span>
-                        <span>化妆品广告片</span>
-                        <span>食品广告片</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="clearfix font40 lh50">短视频制作</div>
-                    <div class="clearfix label-btn">
-                        <span>影视剧</span>
-                        <span>微电影</span>
-                        <span>众筹视频</span>
-                        <span>视频营销</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="clearfix font40 lh50">个人影视制作</div>
-                    <div class="clearfix label-btn">
-                        <span>婚礼摄影</span>
-                        <span>个人短片</span>
-                        <span>生日MV</span>
-                        <span>晚会摄影</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="chuangyi-item bg2" style="display: none;">
-            <ul>
-                <li>
-                    <div class="clearfix font40 lh50">解说词编写</div>
-                    <div class="clearfix label-btn">
-                        <span>大纲定制</span>
-                        <span>原创文案撰写</span>
-                        <span>解说词免费修改</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="clearfix font40 lh50">分镜设计</div>
-                    <div class="clearfix label-btn">
-                        <span>产品分镜设计</span>
-                        <span>动画分镜头</span>
-                        <span>企业宣传分镜头</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="clearfix font40 lh50">分镜脚本创作</div>
-                    <div class="clearfix label-btn">
-                        <span>镜号</span>
-                        <span>摄法</span>
-                        <span>时长</span>
-                        <span>画面内容</span>
-                        <span>音效</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="clearfix font40 lh50">一站式策划</div>
-                    <div class="clearfix label-btn">
-                        <span>光线选择</span>
-                        <span>色温控制</span>
-                        <span>摄影环境</span>
-                        <span>更多服务</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="chuangyi-item bg3" style="display: none;">
-            <ul>
-                <li>
-                    <div class="clearfix font40 lh50">剪辑服务</div>
-                    <div class="clearfix label-btn">
-                        <span>视频剪辑</span>
-                        <span>音频剪辑</span>
-                        <span>视频合成</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="clearfix font40 lh50">配音服务</div>
-                    <div class="clearfix label-btn">
-                        <span>动漫配音</span>
-                        <span>方言配音</span>
-                        <span>文艺配音</span>
-                        <span>外语配音</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="clearfix font40 lh50">后期特效</div>
-                    <div class="clearfix label-btn">
-                        <span>3D特效</span>
-                        <span>U3D特效</span>
-                        <span>特效字幕</span>
-                        <span>声音特效</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="clearfix font40 lh50">片头制作</div>
-                    <div class="clearfix label-btn">
-                        <span>LOGO片头</span>
-                        <span>宣传片片头</span>
-                        <span>影视片头</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="chuangyi-item bg4" style="display: none;">
-            <ul>
-                <li>
-                    <div class="clearfix font40 lh50">cary服务</div>
-                    <div class="clearfix label-btn">
-                        <span>视频剪辑</span>
-                        <span>音频剪辑</span>
-                        <span>视频合成</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="clearfix font40 lh50">配音服务</div>
-                    <div class="clearfix label-btn">
-                        <span>动漫配音</span>
-                        <span>方言配音</span>
-                        <span>文艺配音</span>
-                        <span>外语配音</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="clearfix font40 lh50">后期特效</div>
-                    <div class="clearfix label-btn">
-                        <span>3D特效</span>
-                        <span>U3D特效</span>
-                        <span>特效字幕</span>
-                        <span>声音特效</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="clearfix font40 lh50">片头制作</div>
-                    <div class="clearfix label-btn">
-                        <span>LOGO片头</span>
-                        <span>宣传片片头</span>
-                        <span>影视片头</span>
-                    </div>
-                    <div class="clearfix t_c">
-                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <volist name="solutree" id="vo" key="kk">
+            <if condition="($kk == 1)">
+                <div class="chuangyi-item ">
+                    <ul>
+                        <if condition="isset($vo['children'])">
+                            <volist name="$vo['children']" id="childvo" key="childk">
+                                <li>
+                                    <div class="clearfix font40 lh50">{$childvo['title']}</div>
+                                    <div class="clearfix label-btn">
+                                        <if condition="isset($childvo['children'])">
+                                            <volist name="$childvo['children']" id="dchildvo">
+                                                <if condition="isset($dchildvo['title'])">
+                                                    <span>{$dchildvo['title']|default=''}</span>
+                                                </if>
+                                            </volist>
+                                        </if>
+                                    </div>
+                                    <div class="clearfix t_c">
+                                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
+                                    </div>
+                                </li>
+                            </volist>
+                        </if>
+                    </ul>
+                </div>
+                <else/>
+                <div class="chuangyi-item" style="display: none">
+                    <ul>
+                        <if condition="isset($vo['children'])">
+                            <volist name="$vo['children']" id="childvo" key="childk">
+                                <li>
+                                    <div class="clearfix font40 lh50">{$childvo['title']}</div>
+                                    <div class="clearfix label-btn">
+                                        <if condition="isset($childvo['children'])">
+                                            <volist name="$childvo['children']" id="dchildvo">
+                                                <if condition="isset($dchildvo['title'])">
+                                                    <span>{$dchildvo['title']|default=''}</span>
+                                                </if>
+                                            </volist>
+                                        </if>
+                                    </div>
+                                    <div class="clearfix t_c">
+                                        <button type="button" class="button red btn-lg layer-btn">立即发布需求</button>
+                                    </div>
+                                </li>
+                            </volist>
+                        </if>
+                    </ul>
+                </div>
+            </if>
+        </volist>
+
         <div class="clear"></div>
     </div>
     <div class="clear"></div>
 </div>
 
+<!--渲染视频的-->
 <div class="page3">
     <div class="container" style="background-color: #000; ">
-        <div class="clearfix t_c font70 lh90 pt60"><b>案例展示</b></div>
-        <div class="clearfix t_c font20 lh30 pb30">专注影视制作领域，1000部经典宣传片、广告片、影视剧等作品</div>
+        <div class="clearfix t_c font70 lh90 pt60"><b>{$info_file['dm_caseshow']['title']|default=''}</b></div>
+        <div class="clearfix t_c font20 lh30 pb30">{$info_file['dm_caseshow']['subtitle']|default=''}</div>
         <div class="video-list d-product-video c333">
             <ul>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_11.jpg" alt=""></em>
-                    <span><p>Tenline2017向上吧诗词宣传片头</p></span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_15.jpg" alt=""></em>
-                    <span>2014最美和声tenline宣传片头</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_12.jpg" alt=""></em>
-                    <span>AAC年度影响力评选晚会视频创意宣传片头</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_19.jpg" alt=""></em>
-                    <span>《狼图腾》主题曲 汪峰《沧浪之歌》MV</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_21.jpg" alt=""></em>
-                    <span>New Sung 跟拍秀</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_21-10.jpg" alt=""></em>
-                    <span>浴室厨三维制作</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_25.jpg" alt=""></em>
-                    <span>Tenline2017土库曼斯坦武道运动会</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_27.jpg" alt=""></em>
-                    <span>演员的诞生宣传片头</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_29.jpg" alt=""></em>
-                    <span>Tenline2016对口型大作战宣传片头</span>
-                </li>
+                <volist name="contents" id="vo">
+                    <if condition="$vo['type'] == 2">
+                        <li d-video="{$vo['id']}">
+                            <em><img src="{:cmf_get_image_url($vo['file'])}" alt=""></em>
+                            <span><p>{$vo['title']}</p></span>
+                        </li>
+                    </if>
+                </volist>
+
             </ul>
             <div class="blk50 "></div>
         </div>
@@ -314,46 +145,19 @@
 
 <div class="page4">
     <div class="container" style="background-color: #000">
-        <div class="clearfix t_c font70 lh90 pt60"><b>设备展示</b></div>
-        <div class="clearfix t_c font20 lh30 pb30">专注影视制作领域，1000部经典宣传片、广告片、影视剧等作品</div>
+        <div class="clearfix t_c font70 lh90 pt60"><b>{$info_file['dm_productshow']['title']|default=''}</b></div>
+        <div class="clearfix t_c font20 lh30 pb30">{$info_file['dm_productshow']['subtitle']|default=''}</div>
         <div class="video-list d-product-img c333">
             <ul>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_11.jpg" alt=""></em>
-                    <span><p>Tenline2017向上吧诗词宣传片头</p></span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_15.jpg" alt=""></em>
-                    <span>2014最美和声tenline宣传片头</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_12.jpg" alt=""></em>
-                    <span>AAC年度影响力评选晚会视频创意宣传片头</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_19.jpg" alt=""></em>
-                    <span>《狼图腾》主题曲 汪峰《沧浪之歌》MV</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_21.jpg" alt=""></em>
-                    <span>New Sung 跟拍秀</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_21-10.jpg" alt=""></em>
-                    <span>浴室厨三维制作</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_25.jpg" alt=""></em>
-                    <span>Tenline2017土库曼斯坦武道运动会</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_27.jpg" alt=""></em>
-                    <span>演员的诞生宣传片头</span>
-                </li>
-                <li>
-                    <em><img src="__TMPL__/dmvideo/images/index_29.jpg" alt=""></em>
-                    <span>Tenline2016对口型大作战宣传片头</span>
-                </li>
+                <volist name="contents" id="vo">
+                    <if condition="$vo['type'] == 1">
+                        <li d-image="{:cmf_get_image_url($vo['file'])}">
+                            <em><img src="{:cmf_get_image_url($vo['file'])}" alt=""></em>
+                            <span><p>{$vo['title']}</p></span>
+                        </li>
+                    </if>
+                </volist>
+
             </ul>
         </div>
         <div class="clear"></div>
@@ -363,9 +167,9 @@
 
 <div class="container" style="background-color: #000; color: #fff">
     <div class="blk50 page5"></div>
-    <div class="clearfix t_c font70 lh100 pt40 pb20"><b>服务流程</b></div>
-    <div class="clearfix t_c lh24 font24 pb20 cccc"><p>拥有行业内最先进专业影视拍摄及制作设备</p></div>
-    <div class="clearfix t_c"><img src="__TMPL__/dmvideo/dmimg/d-fuwulc.png" alt=""></div>
+    <div class="clearfix t_c font70 lh100 pt40 pb20"><b>{$info_file['dm_service']['title']|default=''}</b></div>
+    <div class="clearfix t_c lh24 font24 pb20 cccc"><p>{$info_file['dm_service']['subtitle']|default=''}</p></div>
+    <div class="clearfix t_c"><img src="{:cmf_get_image_url($info_file['dm_home_service'])}" alt=""></div>
     <div class="blk80 page6"></div>
     <div class="clear"></div>
 </div>
@@ -387,6 +191,8 @@
             </div>
             <div class="clear"></div>
         </div>
+
+
         <div class="clear"></div>
     </div>
 </div>
@@ -421,29 +227,12 @@
             <a href="http://www.epwk.com/link.html" target="_blank">友情链接</a> |
             <a href="http://www.epwk.com/help/callfuwu.html" target="_blank">客服中心</a> |
             <a href="http://www.epwk.com/map.html" target="_blank">网站地图</a></div>
-        <div class="footcontent">Copyright © 2010-2017 www.epwk.com 一品威客网络科技股份有限公司版权所有 备案：闽ICP备12001463号</div>
+        <div class="footcontent">Copyright © 2010-2018 www.fushijie.com 富视界影视文化有限公司版权所有 备案：闽ICP备12001463号</div>
         <div class="clear"></div>
     </div>
     <div class="clear"></div>
 </div>
 
-<div class="footer-submit close-div">
-    <div class="container">
-        <div class="submit-item">
-            <div class="f_l">
-                <span><input type="text" name="username" id="username" placeholder="如何称呼您?" /></span>
-                <span class="pt5">
-                    <input type="text" name="mobile" maxlength="11" id="mobile3" placeholder="请输入11位手机号码">
-                </span>
-            </div>
-            <div class="f_r">
-                <button type="button" class="button red" id="footer-submit-btn"></button>
-            </div>
-
-            <a href="javascript:void(0);" class="close">×</a>
-        </div>
-    </div>
-</div>
 
 <!--<div class="left-kefu" ms-controller="lxr">-->
 
@@ -476,26 +265,30 @@
     <div style="width: 64px; height: 64px;"></div>
 </div>
 
-<div class="left-nav">
-    <div class="left-nav-item">
-        <span class="active">服务<br>优势</span>
-        <span>解决<br>方案</span>
-        <span>案例<br>展示</span>
-        <span>设备<br>展示</span>
-        <span>服务<br>流程</span>
-        <span>立即<br>咨询</span>
-        <span style="margin-bottom: 0;">关于<br>我们</span>
-        <div class="clear"></div>
-    </div>
-    <span class="goto-top"></span>
-</div>
+
+<!--左边导航 暂时隐藏了-->
+<!--<div class="left-nav">-->
+    <!--<div class="left-nav-item">-->
+        <!--<span class="active">服务<br>优势</span>-->
+        <!--<span>解决<br>方案</span>-->
+        <!--<span>案例<br>展示</span>-->
+        <!--<span>设备<br>展示</span>-->
+        <!--<span>服务<br>流程</span>-->
+        <!--<span>立即<br>咨询</span>-->
+        <!--<span style="margin-bottom: 0;">关于<br>我们</span>-->
+        <!--<div class="clear"></div>-->
+    <!--</div>-->
+    <!--<span class="goto-top"></span>-->
+<!--</div>-->
+
 
 
 <!-- <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script> -->
 <script type="text/javascript" src="__TMPL__/dmvideo/js/jquery-1.11.3.min.js"></script>
 <!-- <script type="text/javascript" src="./common/sea.js"></script> -->
-<script type="text/javascript" src="__TMPL__/dmvideo/common/statisticsCommon.js"></script>
+<!--<script type="text/javascript" src="__TMPL__/dmvideo/common/statisticsCommon.js"></script>-->
 <script type="text/javascript" src="__TMPL__/dmvideo/js/layer.js"></script>
+<script type="text/javascript" src="__TMPL__/dmvideo/common/d-function.js"></script>
 <script type="text/javascript" src="__TMPL__/dmvideo/js/myaction.js"></script>
 
 

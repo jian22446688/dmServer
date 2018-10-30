@@ -10,6 +10,8 @@
 // +----------------------------------------------------------------------
 namespace app\dm\controller;
 
+use app\dm\model\DmContentModel;
+use app\dm\model\DmSolutionModel;
 use app\dm\model\DmUserModel;
 use cmf\controller\HomeBaseController;
 use think\Request;
@@ -17,6 +19,18 @@ use think\Route;
 
 class IndexController extends HomeBaseController {
     public function index(){
+        $data = DmSolutionModel::all();
+        $contents = DmContentModel::where('status', 1)->select();
+        $soluTree = get_attr($data, 0);
+
+        $info_file = include(CMF_ROOT . '/app/dm/config.php');
+        $info_file = $info_file ? $info_file : array();
+
+        $this->assign('solutree', $soluTree);
+        $this->assign('info_file', $info_file);
+        $this->assign('contents', $contents);
+
+
         if (cmf_is_mobile()){
             // 手机访问
             return $this->fetch('mobile/index');
@@ -45,7 +59,9 @@ class IndexController extends HomeBaseController {
 
 
     public function play() {
-
+        $id = $this->request->param('id');
+        $dmode = DmContentModel::get($id);
+        $this->assign('videoitem', $dmode);
         return $this->fetch('layer-submit/play-page');
     }
 

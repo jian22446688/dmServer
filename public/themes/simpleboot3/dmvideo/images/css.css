@@ -988,7 +988,7 @@ input[type=password],input[type=text] {
 
 .head {
 	height: 650px;
-	background: url("../dmimg/d-index-1.jpg") no-repeat center 0
+
 }
 
 .head .headbox {
@@ -1004,7 +1004,7 @@ input[type=password],input[type=text] {
 	top: 36px;
 	width: 277px;
 	height: 80px;
-	background: url("../dmimg/d-logo.png") no-repeat;
+
 }
 
 .head .headbox .logo a {
@@ -1301,19 +1301,31 @@ input[type=password],input[type=text] {
 
 .chuangyi-tab {
 	width: 960px;
-	height: 71px;
-	background-image: url("../dmimg/tab-bg.png");
-	background-repeat: no-repeat;
-	padding-left: 238px
+	height: 70px;
+	/*background-image: url("../dmimg/tab-bg.png");*/
+	/*background-repeat: no-repeat;*/
+	padding-left: 260px
 }
 
 .chuangyi-tab span {
-	display: block;
+	color: #000;
+	display: inline-block;
 	float: left;
-	width: 238px;
+	/*width: 238px;*/
 	height: 70px;
-	cursor: pointer
+	cursor: pointer;
+	padding: 0 16px;
+	font-size: 32px;
+	line-height: 76px;
+	text-align: center;
+	font-weight: bold;
 }
+
+.chuangyi-tab .active {
+	color: #fff;
+	background-image: url("../dmimg/chuangyi-tab-bg.png");
+}
+
 
 .chuangyi-tab.active0 {
 	background-position: center 0
@@ -1330,36 +1342,20 @@ input[type=password],input[type=text] {
 	background-position: center -212.5px
 }
 
+
+
 .chuangyi-wrap {
 	clear: both
 }
 
 .chuangyi-wrap .chuangyi-item {
-	background-position: 0 0;
-	background-repeat: no-repeat;
 	height: 590px;
-	background-color: #d8dbdb;
 	padding-left: 310px;
 	padding-right: 30px;
 	width: 860px;
-	padding-top: 50px
+	padding-top: 50px;
+	background: #d8dbdb url("../dmimg/d-index-3-bg.png") no-repeat 0 0;
 }
-
-.chuangyi-wrap .chuangyi-item.bg1 {
-	background-image: url("../dmimg/d-index-3-bg.png")
-}
-
-.chuangyi-wrap .chuangyi-item.bg2 {
-	background-image: url("../dmimg/d-index-3-bg.png")
-}
-
-.chuangyi-wrap .chuangyi-item.bg3 {
-	background-image: url("../dmimg/d-index-3-bg.png")
-}
-.chuangyi-wrap .chuangyi-item.bg4 {
-	background-image: url("../dmimg/d-index-3-bg.png")
-}
-
 
 .chuangyi-wrap .chuangyi-item li {
 	width: 360px;
@@ -1414,7 +1410,7 @@ input[type=password],input[type=text] {
 
 .video-list {
 	clear: both;
-	width: 1200px
+	width: 1200px;
 }
 
 .video-list ul {
@@ -1429,7 +1425,8 @@ input[type=password],input[type=text] {
 	margin-right: 60px;
 	margin-bottom: 20px;
 	background: url("index_09.jpg") no-repeat 0 0;
-	padding-top: 14px
+	padding-top: 14px;
+	cursor: pointer;
 }
 
 .video-list ul li em,.video-list ul li>span {

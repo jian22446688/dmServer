@@ -158,13 +158,9 @@ class AdminCategoryController extends AdminBaseController {
      */
     public function delete() {
         $id  = $this->request->param('id');
-        if ($id){
-            $de = DmCategoryModel::destroy($id);
-            if ($de){
-                $this->success('删除成功!');
-            }else{
-                $this->error('删除失败');
-            }
+        $de = DmCategoryModel::destroy($id);
+        if ($de){
+            $this->success('删除成功!');
         }else{
             $this->error('删除失败');
         }

@@ -117,13 +117,15 @@ $(document).ready(function () {
         function() {
             d_clearstr2(this)
         });
-    $(document).on("click", ".layer-submit",
-        function() {
-            var _this = $(".layer-item");
-            var u = _this.find('[name="username"]').val();
-            var m = _this.find('[name="mobile"]').val();
-            SubmitData(_this, u, m, lindex)
-        });
+    $(document).on("click", ".layer-submit", function() {
+
+        console.log('dddddddddddddddd');
+
+        var _this = $(".layer-item");
+        var u = _this.find('[name="username"]').val();
+        var m = _this.find('[name="mobile"]').val();
+        SubmitData(_this, u, m, lindex)
+    });
     function SubmitData(_this, u, m, i) {
         if (u == "") {
             layer.alert("请输入您的姓名", {
@@ -144,45 +146,35 @@ $(document).ready(function () {
             return false
         }
         _this.find("button").attr("disabled", true);
+
+
+
+
         $.ajax({
-            url: "####",
-            type: "GET",
-            dataType: "jsonp",
-            jsonp: "callback",
+            url: '/dm/Index/userSubmit',
+            type: 'POST',
+            dataType: 'json',
             data: {
                 reg_name: u,
-                reg_username: u,
-                mobile: m,
-                tc_desc: u,
-                way: 1,
-                adv_type: 111
+                reg_phone: m,
+                reg_company: '',
+                reg_site: ''
             },
-            success: function(json) {
-                _this.find("button").attr("disabled", false);
-                if (json.status == 1) {
-                    _taq.push({
-                        convert_id: "1598956501189652",
-                        event_type: "form"
-                    });
-                    _this.find("input").val("");
+            success: function (json) {
+                if (json.status == 0){
                     if (i) {
-                        layer.alert("请保持手机畅通，我们的工作人员将与您联系",
-                            function() {
-                                parent.layer.close(i)
-                            })
+                        layer.alert('请保持手机畅通，我们的工作人员将与您联系',function () {
+                            parent.layer.close(i);
+                        });
                     } else {
-                        layer.alert("请保持手机畅通，我们的工作人员将与您联系", {
-                            icon: 1
-                        })
+                        layer.alert('请保持手机畅通，我们的工作人员将与您联系', {icon: 1});
                     }
                     return false
-                } else {
-                    layer.alert(json.msg, {
-                        icon: 2
-                    });
-                    return false
+                }else {
+                    layer.alert(json.msg, {icon: 2});
+                    return false;
                 }
-            }
+            },
         })
     }
 

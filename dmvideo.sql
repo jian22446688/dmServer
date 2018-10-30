@@ -11,7 +11,7 @@
  Target Server Version : 50638
  File Encoding         : 65001
 
- Date: 07/10/2018 16:13:37
+ Date: 20/10/2018 17:53:01
 */
 
 SET NAMES utf8mb4;
@@ -259,7 +259,7 @@ CREATE TABLE `dm_asset` (
   `suffix` varchar(10) NOT NULL DEFAULT '' COMMENT '文件后缀名,不包括点',
   `more` text COMMENT '其它详细信息,JSON格式',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COMMENT='资源表';
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COMMENT='资源表';
 
 -- ----------------------------
 -- Records of dm_asset
@@ -267,6 +267,14 @@ CREATE TABLE `dm_asset` (
 BEGIN;
 INSERT INTO `dm_asset` VALUES (1, 1, 3321469, 1538808220, 1, 0, 'a3f166e8e57257b58487e399d64b45e117824bdd61cb6658a30c1675985b7e15', '未来的生活上s.mp4', 'dm/20181006/5d861337d5f051336f79ed66f9f1c9c5.mp4', 'a3f166e8e57257b58487e399d64b45e1', '9bd44cd8e7c0473d3be1ef35a1f243f857efff54', 'mp4', NULL);
 INSERT INTO `dm_asset` VALUES (2, 1, 1718285, 1538878611, 1, 0, '2f4e38f1f00cfe72cdb4c699d1aae3b04e99c06bd15ac9051f9966d056ce8651', '屏幕快照 2018-06-09 下午2.49.48.png', 'dm/20181007/4bebd379ff13fbd8c26e27cb2008944b.png', '2f4e38f1f00cfe72cdb4c699d1aae3b0', '21f9c0a3dc09ddeb48e2fa44e2252069e160724b', 'png', NULL);
+INSERT INTO `dm_asset` VALUES (3, 1, 2239, 1540001851, 1, 0, 'f7c4d43e0b74fb3b8e949d8d79858b438da13c84eceadc03c750863a2453682c', 'chuangyi-tab-bg.png', 'dm/20181020/3df9a1b22cc3bd9ac174bb5e0322028b.png', 'f7c4d43e0b74fb3b8e949d8d79858b43', '1eb669ae5d52fc9ccc4e5bc2d7c510349be03205', 'png', NULL);
+INSERT INTO `dm_asset` VALUES (4, 1, 37487, 1540002274, 1, 0, '86bab019cfea07a3a6db9b75a397606e1bfc067157dcb83d39ca127506d3ef08', 'd-logo.png', 'dm/20181020/cac0f42f36ad23542ff898d200285da7.png', '86bab019cfea07a3a6db9b75a397606e', '05a214a5d07cf9534b9222ed1a1a9eba28b1415d', 'png', NULL);
+INSERT INTO `dm_asset` VALUES (5, 1, 204250, 1540005241, 1, 0, 'e53c1e725cc8a50c88204677af452cef5a3b50fcfbb982013718b76e96759f45', 'd-index-1.jpg', 'dm/20181020/01d597e970765aa4ebcf3ce09851583e.jpg', 'e53c1e725cc8a50c88204677af452cef', '23b1f48cc1bcc80716ade1f9c736bfd74851ed8c', 'jpg', NULL);
+INSERT INTO `dm_asset` VALUES (6, 1, 292197, 1540005269, 1, 0, 'ef6e0808f35b8b9d95dec27cdff65e8708cfe4e017b116ae98b3eff3f37c1aa5', 'd-2.png', 'dm/20181020/40ab0ee9630a3f3c79d82fcfc6d87385.png', 'ef6e0808f35b8b9d95dec27cdff65e87', '487beaae1d55173d25db05b125231cd95aa884db', 'png', NULL);
+INSERT INTO `dm_asset` VALUES (7, 1, 162278, 1540005556, 1, 0, 'd947e7f8439fd60787b267898a8fb46b11e0f8e41df81e51e3bb35971d88d704', 'd-index-1.jpg', 'dm/20181020/b027a66bbed4f642fefc5265a351e077.jpg', 'd947e7f8439fd60787b267898a8fb46b', '9af70637dffe42e824520ea6da08eb81fc21b7b8', 'jpg', NULL);
+INSERT INTO `dm_asset` VALUES (8, 1, 400520, 1540015451, 1, 0, 'a155359c239ee953317d533015eafa810e6f3769aee10f1d6122c7c9e36c2933', 'd-fuwulc.png', 'dm/20181020/1452919a606e6cae4de2bc7d129b5b0d.png', 'a155359c239ee953317d533015eafa81', '4ab9cf607e406b91ce7b3bdb34197ffe423f6e78', 'png', NULL);
+INSERT INTO `dm_asset` VALUES (9, 1, 832377, 1540027727, 1, 0, 'afb6f645f85ac4af068862fa17c197c87b42e45cf7338350acdf7c2fbd2b064d', '屏幕快照 2018-10-20 下午5.28.07.png', 'dm/20181020/ae47f24b31fae79cc29b874188f04d2a.png', 'afb6f645f85ac4af068862fa17c197c8', 'a5363c0aae0a6668e52298ee4553eec91112ba3f', 'png', NULL);
+INSERT INTO `dm_asset` VALUES (10, 1, 74956, 1540027857, 1, 0, '74efc1e7dc580edcbc300e5acae92a2e6696e891da552666bba0f37a38828123', 'index_25.jpg', 'dm/20181020/eb8c273c5a819988bc84995a3907b701.jpg', '74efc1e7dc580edcbc300e5acae92a2e', '2c060d86655dee6e389c21fca75c542ec32844a9', 'jpg', NULL);
 COMMIT;
 
 -- ----------------------------
@@ -592,7 +600,7 @@ CREATE TABLE `dm_dm_content` (
   `update_time` datetime DEFAULT NULL,
   `delete_time` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of dm_dm_content
@@ -600,20 +608,73 @@ CREATE TABLE `dm_dm_content` (
 BEGIN;
 INSERT INTO `dm_dm_content` VALUES (1, 0, 2, 'test', 'ssss', 'ssss', NULL, 1, 'cary', '2018-10-01 15:58:33', '2018-10-07 00:00:00', '2018-10-07 00:00:00');
 INSERT INTO `dm_dm_content` VALUES (2, 0, 1, 'test2', 'dsdsdfsdf', 'sdfsdfsdf', NULL, 0, 'caa', '2018-10-03 16:00:59', '2018-10-07 00:00:00', '2018-10-07 00:00:00');
-INSERT INTO `dm_dm_content` VALUES (8, 0, 1, 'sdfsdfsdf', '&lt;p&gt;sdfsdfsdfs&lt;/p&gt;', '', '', 0, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', NULL);
+INSERT INTO `dm_dm_content` VALUES (8, 0, 1, 'sdfsdfsdf', '&lt;p&gt;sdfsdfsdfs&lt;/p&gt;', '', '', 0, '1', '2018-10-07 00:00:00', '2018-10-20 00:00:00', '2018-10-20 00:00:00');
 INSERT INTO `dm_dm_content` VALUES (9, 0, 1, '水电费水电费水电费', '&lt;p&gt;水电费按时发大水&lt;/p&gt;', '', '', 1, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', '2018-10-07 00:00:00');
 INSERT INTO `dm_dm_content` VALUES (10, 0, 1, 'sdfsdf', '&lt;p&gt;sdfsdfdsfdsf&lt;/p&gt;', '', '', 1, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', '2018-10-07 00:00:00');
 INSERT INTO `dm_dm_content` VALUES (11, 0, 1, '对方水电费', '', '', '', 1, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', '2018-10-07 00:00:00');
 INSERT INTO `dm_dm_content` VALUES (12, 0, 1, 'sdfsdfsd', '&lt;p&gt;sdfsd&lt;/p&gt;', '', '', 1, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', '2018-10-07 00:00:00');
 INSERT INTO `dm_dm_content` VALUES (13, 0, 2, 'sdfsdfsd', '&lt;p&gt;sdfsd&lt;/p&gt;', '', '', 1, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', '2018-10-07 00:00:00');
-INSERT INTO `dm_dm_content` VALUES (14, 0, 1, 'HOW TO START COOPERATION', '&lt;p&gt;sdfsdfsdfs&lt;/p&gt;', 'dm/20181007/4bebd379ff13fbd8c26e27cb2008944b.png', '', 1, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', NULL);
-INSERT INTO `dm_dm_content` VALUES (15, 0, 2, 'sdfsdfdsf', '&lt;p&gt;sdfsdf&lt;/p&gt;', '', 'dm/20181006/5d861337d5f051336f79ed66f9f1c9c5.mp4', 1, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', NULL);
-INSERT INTO `dm_dm_content` VALUES (16, 0, 2, 'sdf', '&lt;p&gt;sdfsdf&lt;/p&gt;', '', 'dm/20181006/5d861337d5f051336f79ed66f9f1c9c5.mp4', 1, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', NULL);
-INSERT INTO `dm_dm_content` VALUES (17, 0, 2, 'sdfsdf', '&lt;p&gt;sdfsdf&lt;/p&gt;', '', 'dm/20181006/5d861337d5f051336f79ed66f9f1c9c5.mp4', 1, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', NULL);
-INSERT INTO `dm_dm_content` VALUES (18, 0, 2, 'sdfsdfsdf', '&lt;p&gt;sdfsdfsdf&lt;/p&gt;', 'dm/20181007/4bebd379ff13fbd8c26e27cb2008944b.png', 'dm/20181006/5d861337d5f051336f79ed66f9f1c9c5.mp4', 1, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', NULL);
-INSERT INTO `dm_dm_content` VALUES (19, 0, 1, 'dttttttttttttttt是发送到发斯蒂芬', '&lt;p&gt;sdfsdfsdfsdfsdf&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;sdfsdfsdfsdfsdf&lt;/span&gt;sdfds&lt;span style=&quot;color: rgb(146, 208, 80);&quot;&gt;fsdf&lt;/span&gt;&lt;/p&gt;', 'dm/20181007/4bebd379ff13fbd8c26e27cb2008944b.png', '', 0, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', NULL);
-INSERT INTO `dm_dm_content` VALUES (20, 0, 1, 'adsfasdfasdfsdfdsf', '&lt;p&gt;sdfsdfasdf&lt;/p&gt;', 'dm/20181007/4bebd379ff13fbd8c26e27cb2008944b.png', '', 1, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', NULL);
-INSERT INTO `dm_dm_content` VALUES (21, 0, 1, 'fsdfsdfsd', '&lt;p&gt;sfsdfsdfs&lt;br&gt;&lt;/p&gt;', 'dm/20181007/4bebd379ff13fbd8c26e27cb2008944b.png', '', 1, '1', '2018-10-07 00:00:00', '2018-10-07 00:00:00', NULL);
+INSERT INTO `dm_dm_content` VALUES (14, 0, 1, 'HOW TO START COOPERATION', '&lt;p&gt;sdfsdfsdfs&lt;/p&gt;', 'dm/20181007/4bebd379ff13fbd8c26e27cb2008944b.png', '', 1, '1', '2018-10-07 00:00:00', '2018-10-20 00:00:00', '2018-10-20 00:00:00');
+INSERT INTO `dm_dm_content` VALUES (15, 0, 2, 'sdfsdfdsf', '&lt;p&gt;sdfsdf&lt;/p&gt;', '', 'dm/20181006/5d861337d5f051336f79ed66f9f1c9c5.mp4', 1, '1', '2018-10-07 00:00:00', '2018-10-20 00:00:00', '2018-10-20 00:00:00');
+INSERT INTO `dm_dm_content` VALUES (16, 0, 2, 'sdf', '&lt;p&gt;sdfsdf&lt;/p&gt;', '', 'dm/20181006/5d861337d5f051336f79ed66f9f1c9c5.mp4', 1, '1', '2018-10-07 00:00:00', '2018-10-20 00:00:00', '2018-10-20 00:00:00');
+INSERT INTO `dm_dm_content` VALUES (17, 0, 2, 'sdfsdf', '&lt;p&gt;sdfsdf&lt;/p&gt;', '', 'dm/20181006/5d861337d5f051336f79ed66f9f1c9c5.mp4', 1, '1', '2018-10-07 00:00:00', '2018-10-20 00:00:00', '2018-10-20 00:00:00');
+INSERT INTO `dm_dm_content` VALUES (18, 0, 2, 'sdfsdfsdf', '&lt;p&gt;sdfsdfsdf&lt;/p&gt;', 'dm/20181007/4bebd379ff13fbd8c26e27cb2008944b.png', 'dm/20181006/5d861337d5f051336f79ed66f9f1c9c5.mp4', 1, '1', '2018-10-07 00:00:00', '2018-10-20 00:00:00', '2018-10-20 00:00:00');
+INSERT INTO `dm_dm_content` VALUES (19, 0, 1, 'dttttttttttttttt是发送到发斯蒂芬', '&lt;p&gt;sdfsdfsdfsdfsdf&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;sdfsdfsdfsdfsdf&lt;/span&gt;sdfds&lt;span style=&quot;color: rgb(146, 208, 80);&quot;&gt;fsdf&lt;/span&gt;&lt;/p&gt;', 'dm/20181007/4bebd379ff13fbd8c26e27cb2008944b.png', '', 0, '1', '2018-10-07 00:00:00', '2018-10-20 00:00:00', '2018-10-20 00:00:00');
+INSERT INTO `dm_dm_content` VALUES (20, 0, 1, 'adsfasdfasdfsdfdsf', '&lt;p&gt;sdfsdfasdf&lt;/p&gt;', 'dm/20181007/4bebd379ff13fbd8c26e27cb2008944b.png', '', 1, '1', '2018-10-07 00:00:00', '2018-10-20 00:00:00', '2018-10-20 00:00:00');
+INSERT INTO `dm_dm_content` VALUES (21, 0, 1, 'fsdfsdfsd', '&lt;p&gt;sfsdfsdfs&lt;br&gt;&lt;/p&gt;', 'dm/20181007/4bebd379ff13fbd8c26e27cb2008944b.png', '', 1, '1', '2018-10-07 00:00:00', '2018-10-20 00:00:00', '2018-10-20 00:00:00');
+INSERT INTO `dm_dm_content` VALUES (22, 0, 2, '第一个产品介绍', NULL, 'dm/20181020/ae47f24b31fae79cc29b874188f04d2a.png', 'dm/20181006/5d861337d5f051336f79ed66f9f1c9c5.mp4', 1, '1', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_content` VALUES (23, 0, 1, '第一个图片内容', NULL, 'dm/20181020/eb8c273c5a819988bc84995a3907b701.jpg', '', 1, '1', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+COMMIT;
+
+-- ----------------------------
+-- Table structure for dm_dm_solution
+-- ----------------------------
+DROP TABLE IF EXISTS `dm_dm_solution`;
+CREATE TABLE `dm_dm_solution` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `parent_id` int(11) NOT NULL DEFAULT '0',
+  `title` varchar(255) DEFAULT NULL,
+  `create_time` datetime DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL,
+  `delete_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of dm_dm_solution
+-- ----------------------------
+BEGIN;
+INSERT INTO `dm_dm_solution` VALUES (0, 0, 'all', NULL, '2018-10-20 00:00:00', '2018-10-20 00:00:00');
+INSERT INTO `dm_dm_solution` VALUES (1, 0, '策划与拍摄', NULL, '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (2, 0, '二维与三维', NULL, NULL, NULL);
+INSERT INTO `dm_dm_solution` VALUES (3, 0, '创意与文案', NULL, NULL, NULL);
+INSERT INTO `dm_dm_solution` VALUES (4, 0, '后期与特效', NULL, NULL, NULL);
+INSERT INTO `dm_dm_solution` VALUES (5, 0, '设备租赁', NULL, '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (7, 0, 'sdfsdfsdf-cary-bbb', NULL, '2018-10-20 00:00:00', '2018-10-20 00:00:00');
+INSERT INTO `dm_dm_solution` VALUES (8, 0, 'test', NULL, '2018-10-20 00:00:00', '2018-10-20 00:00:00');
+INSERT INTO `dm_dm_solution` VALUES (9, 1, '忑忑忐忐', '2018-10-20 00:00:00', '2018-10-20 00:00:00', '2018-10-20 00:00:00');
+INSERT INTO `dm_dm_solution` VALUES (10, 1, '宣传片制作', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (11, 1, '广告片拍摄', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (12, 1, '短视频制作', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (13, 1, '个人影视制作', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (14, 2, '解说词编写', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (15, 2, '分镜设计', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (16, 2, '分镜脚本创作', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (17, 2, '一站式策划', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (18, 3, '剪辑服务', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (19, 3, '配音服务', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (20, 3, '后期特效', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (21, 3, '片头制作', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (22, 5, '宣传片制作', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (23, 4, '宣传片制作', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (24, 4, '广告片拍摄', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (25, 4, '短视频制作', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (26, 4, '个人影视制作', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (27, 10, '企业宣传', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (28, 11, '珠宝广告片', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (29, 11, '汽车广告片', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (30, 11, '化妆品广告片', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
+INSERT INTO `dm_dm_solution` VALUES (31, 11, '食品广告片', '2018-10-20 00:00:00', '2018-10-20 00:00:00', NULL);
 COMMIT;
 
 -- ----------------------------
@@ -632,7 +693,7 @@ CREATE TABLE `dm_dm_user` (
   `update_time` datetime DEFAULT NULL,
   `delete_time` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of dm_dm_user
@@ -660,6 +721,8 @@ INSERT INTO `dm_dm_user` VALUES (19, 'dddd', 'description', 'ddd', 'ddd', 'ssss'
 INSERT INTO `dm_dm_user` VALUES (20, 'dddd', 'description', 'ddd', 'ddd', 'ssss', 0, '2018-10-07 00:00:00', '2018-10-07 00:00:00', NULL);
 INSERT INTO `dm_dm_user` VALUES (21, 'dddd', 'description', 'ddd', 'ddd', 'ssss', 0, '2018-10-07 00:00:00', '2018-10-07 00:00:00', NULL);
 INSERT INTO `dm_dm_user` VALUES (22, 'dddd', 'description', 'ddd', 'ddd', 'ssss', 0, '2018-10-07 00:00:00', '2018-10-07 00:00:00', NULL);
+INSERT INTO `dm_dm_user` VALUES (23, 'cary', '', 'cary_company', '13620956841', 'shenzhenlonghua', 0, '2018-10-13 00:00:00', '2018-10-13 00:00:00', NULL);
+INSERT INTO `dm_dm_user` VALUES (24, 'cary', '', 'cary_company', '13620956841', 'shenzhenlonghua', 0, '2018-10-13 00:00:00', '2018-10-13 00:00:00', NULL);
 COMMIT;
 
 -- ----------------------------
@@ -810,7 +873,7 @@ CREATE TABLE `dm_nav` (
   `name` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '导航位置名称',
   `remark` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '' COMMENT '备注',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COMMENT='前台导航位置表';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COMMENT='前台导航位置表';
 
 -- ----------------------------
 -- Records of dm_nav
@@ -818,6 +881,7 @@ CREATE TABLE `dm_nav` (
 BEGIN;
 INSERT INTO `dm_nav` VALUES (1, 1, '主导航', '主导航');
 INSERT INTO `dm_nav` VALUES (2, 0, '底部导航', '');
+INSERT INTO `dm_nav` VALUES (3, 0, '富视界的导航', '');
 COMMIT;
 
 -- ----------------------------
@@ -1231,7 +1295,7 @@ CREATE TABLE `dm_user` (
 -- Records of dm_user
 -- ----------------------------
 BEGIN;
-INSERT INTO `dm_user` VALUES (1, 1, 0, 0, 1538805487, 0, 0, 0.00, 1538801537, 1, 'admin', '###c0f222fadb6c04077596b1d8fc61cdf4', 'admin', '798171920@qq.com', '', '', '', '0.0.0.0', '', '', NULL);
+INSERT INTO `dm_user` VALUES (1, 1, 0, 0, 1540000266, 0, 0, 0.00, 1538801537, 1, 'admin', '###c0f222fadb6c04077596b1d8fc61cdf4', 'admin', '798171920@qq.com', '', '', '', '0.0.0.0', '', '', NULL);
 COMMIT;
 
 -- ----------------------------

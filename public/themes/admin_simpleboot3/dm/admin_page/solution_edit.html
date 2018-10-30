@@ -1,0 +1,76 @@
+<include file="public@header"/>
+<style type="text/css">
+    .pic-list li {
+        margin-bottom: 5px;
+    }
+</style>
+
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:url('AdminPage/index')}">页面管理</a></li>
+        <li><a href="{:url('AdminPage/confSolution')}">解决方案配置列表</a></li>
+        <li class="active"><a href="javascript:;">编辑列表</a></li>
+    </ul>
+    <form action="{:url('AdminPage/solutionEdit')}" method="post" class="form-horizontal js-ajax-form margin-top-20">
+        <div class="row">
+            <div class="col-md-9">
+                <table class="table table-bordered">
+                    <tr>
+                        <th width="100">分类<span class="form-required">*</span></th>
+                        <td >
+                            <input id="post-id" type="hidden" name="post[id]" value="{$sulo.id}">
+                            <select style="width: 300px;" class="form-control" name="post[parent_id]">
+                                <option value="0">请选择分类</option>
+                                <foreach name="sulos" item="vo">
+                                    <if condition="($vo.id == $sulo.parent_id)">
+                                        <option value="{$vo.id|default='0'}" selected>{$vo.title}</option>
+                                        <else/>
+                                        <option value="{$vo.id|default='0'}">{$vo.title}</option>
+                                    </if>
+
+                                </foreach>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>标题<span class="form-required">*</span></th>
+                        <td>
+                            <input class="form-control" type="text" name="post[title]"
+                                   id="title" required value="{$sulo['title']|default=''}" placeholder="请输入标题"/>
+                        </td>
+                    </tr>
+
+
+
+                </table>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary js-ajax-submit">{:lang('SAVE')}</button>
+                        <a class="btn btn-default" href="{:url('AdminPage/confSolution')}">{:lang('BACK')}</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="__STATIC__/js/admin.js"></script>
+<script type="text/javascript">
+    //编辑器路径定义
+    var editorURL = GV.WEB_ROOT;
+</script>
+<script type="text/javascript" src="__STATIC__/js/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="__STATIC__/js/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+
+    });
+
+</script>
+</body>
+</html>

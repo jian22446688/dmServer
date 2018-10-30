@@ -18,8 +18,12 @@ $(document).ready(function() {
     })
 
     $(document).on('click', '.chuangyi-tab span', function () {
+        $('.chuangyi-tab span').removeClass('active')
+
         var index = $(this).index();
-        $(this).parent().removeAttr('class').addClass('chuangyi-tab active' + index);
+
+        // $(this).parent().removeAttr('class').addClass('chuangyi-tab active' + index);
+        $(this).removeAttr('class').addClass('active');
         $('.chuangyi-wrap > div').hide().eq(index).show();
     })
 
@@ -51,6 +55,7 @@ $(document).ready(function() {
 
     $(document).on('click', '.layer-btn', function() {
         layer_open();
+
     })
 
 
@@ -69,14 +74,25 @@ $(document).ready(function() {
     }
 
     $('.d-product-video li').click(function (event) {
+        if ($(this).attr('d-video') != '') {
+            layer_videoPlay($(this).attr('d-video'))
+        }else {
+            parent.layer.alert('视频无效')
+        }
+    })
 
-        console.log('li click')
+    $('.d-product-img li').click(function () {
+        if($(this).attr('d-image') != ''){
+            layer_ShowImage($(this).attr('d-image'))
+        }else {
+            parent.layer.alert('图片无效')
+        }
 
-        layer_videoPlay()
+
     })
 
 
-    function layer_videoPlay(){
+    function layer_videoPlay(vid){
         layer.open({
             title: false,
             type: 2,
@@ -86,7 +102,21 @@ $(document).ready(function() {
             shade: .8,
             shadeClose: false,
             area: ["1024px", "576px"],
-            content: ["/d/play/1", "no"]
+            content: ["/d/play/" +vid , "no"]
+        })
+    }
+
+    function layer_ShowImage(imgpth){
+        layer.open({
+            title: false,
+            type: 1,
+            skin: "layui-layer-rim",
+            closeBtn: 1,
+            scrollbar: false,
+            shade: .8,
+            shadeClose: false,
+            area: ["1024px", "576px"],
+            content: '<div style="text-align: center; height: 100%"><img src="'+imgpth+'" style="height: 100%" alt=""></div>'
         })
     }
 
@@ -152,7 +182,7 @@ $(document).ready(function() {
     })
 
     $(document).on('keyup', '[name="mobile"]', function () {
-        fn.clearstr2(this);
+        d_clearstr2(this);
     })
 
     $(document).on('click', '.layer-submit', function () {
@@ -172,28 +202,23 @@ $(document).ready(function() {
             layer.alert('请输入您的电话号码', {icon: 2});
             return false;
         }
-        if (!fn.regex_check(m, 'mobile')) {
+        if (!d_regex_check(m, 'mobile')) {
             layer.alert('输入格式错误，请输入11位手机号码', {icon: 2});
             return false;
         }
-        _this.find('button').attr('disabled', true);
+
         $.ajax({
-            url: '/userinfo',
-            type: 'post',
+            url: '/dm/Index/userSubmit',
+            type: 'POST',
             dataType: 'json',
             data: {
-                'reg_name': u,
-                'reg_username': u,
-                'mobile': m,
-                'tc_desc': u,
-                'way': 1,
-                'adv_type': 111
+                reg_name: u,
+                reg_phone: m,
+                reg_company: '',
+                reg_site: ''
             },
             success: function (json) {
-                _this.find('button').attr('disabled', false);
-                if (json.status == 1) {
-                    _taq.push({convert_id:"1598956501189652", event_type:"form"});
-                    _this.find('input').val('');
+                if (json.status == 0){
                     if (i) {
                         layer.alert('请保持手机畅通，我们的工作人员将与您联系',function () {
                             parent.layer.close(i);
@@ -201,12 +226,12 @@ $(document).ready(function() {
                     } else {
                         layer.alert('请保持手机畅通，我们的工作人员将与您联系', {icon: 1});
                     }
-                    return false;
-                } else {
+                    return false
+                }else {
                     layer.alert(json.msg, {icon: 2});
                     return false;
                 }
-            }
+            },
         })
     }
 

@@ -43,6 +43,7 @@ function d_clearstr2(inputobj) {
     inputobj.value = inputobj.value.replace(/[^0123456789]/g, '');
 }
 
+
 //判断是否PC或移动端true:PC false Mobile
 function d_browserRedirect() {
     var sUserAgent = navigator.userAgent.toLowerCase();
@@ -104,14 +105,6 @@ function d_GetDomainName() {
     return url;
 }
 
-//即时通讯 IM
-function d_message_im(obj) {
-    $(obj).click(function () {
-        var tTop = parseInt((screen.height - 750) / 2);
-        var tLeft = parseInt((screen.width - 944) / 2);
-        window.open('http://v3.faqrobot.org/robot/epwk.html?sysNum=146060474802411160', '厦门一品威客网络科技有限公司', 'width=944,height=750,left=' + tLeft + ',top=' + tTop + '')
-    })
-}
 
 /**生成随机手机号*/
 function d_getMoble(ast) {

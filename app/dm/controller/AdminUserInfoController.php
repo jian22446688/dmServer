@@ -107,6 +107,8 @@ class AdminUserInfoController extends AdminBaseController
         $this->assign('unreadcount', $res->count());
         $id = $this->request->param('id');
         $da = DmUserModel::get($id);
+        $da->status = 1;
+        $da->update();
         $this->assign('info', $da);
         return $this->fetch();
     }
